@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AVIDAA ORIGINS &mdash; The World Record</title>
+<meta name="description" content="A full timeline of human civilization — Sumer, Mesopotamia, Egypt, and the ancient world. Every era, every empire, every discovery. Built by IO.">
+<meta name="theme-color" content="#0d0b08">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://www.google-analytics.com; frame-ancestors 'none';">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta name="referrer" content="no-referrer">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://avidaa1.github.io/origins">
+<meta property="og:title" content="AVIDAA ORIGINS &mdash; The World Record">
+<meta property="og:description" content="Sumer. Egypt. The World. A full civilization timeline from 3500 BCE to now.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230d0b08'/%3E%3Ctext x='4' y='26' font-size='22' font-family='serif' font-weight='900' fill='%23c9952a'%3E&#x24CA;%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cinzel+Decorative:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G8M1YZQ8WF"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-G8M1YZQ8WF');</script>
+<style>
+/* ============================================================
+   AVIDAA ORIGINS — Stone Tablet Design System
+   Dark basalt · amber gold · cuneiform borders · editorial serif
+   ============================================================ */
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --stone:#0d0b08;
+  --stone2:#14110d;
+  --stone3:#1e1a14;
+  --stone4:#2a2419;
+  --amber:#c9952a;
+  --amber2:#e8b04a;
+  --amber3:#f5d080;
+  --sand:#d4b896;
+  --sand2:#e8d5b8;
+  --dust:#8a7560;
+  --dust2:#6a5840;
+  --lapis:#1a3a6e;
+  --lapis2:#2456a8;
+  --crimson:#8b1a1a;
+  --nile:#1e4a3a;
+  --ink:#f0e8d8;
+  --ink2:#c8b89a;
+  --ink3:#8a7a62;
+  --glyph:'Cinzel',serif;
+  --body:'EB Garamond',Georgia,serif;
+}
+html{scroll-behavior:smooth;font-size:16px;}
+body{background:var(--stone);color:var(--ink);font-family:var(--body);overflow-x:hidden;min-height:100vh;}
+
+/* GRAIN OVERLAY */
+body::before{content:'';position:fixed;inset:0;z-index:1;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23noise)' opacity='0.06'/%3E%3C/svg%3E");opacity:.5;}
+
+/* STICKY NAV */
+#topnav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(13,11,8,.92);border-bottom:1px solid rgba(201,149,42,.18);backdrop-filter:blur(12px);overflow-x:auto;overflow-y:hidden;scrollbar-width:none;}
+#topnav::-webkit-scrollbar{display:none;}
+.nav-inner{display:flex;align-items:stretch;height:52px;min-width:max-content;}
+.nav-logo{font-family:var(--glyph);font-size:11px;letter-spacing:5px;color:var(--amber);text-transform:uppercase;text-decoration:none;display:flex;align-items:center;padding:0 22px;flex-shrink:0;white-space:nowrap;border-right:1px solid rgba(201,149,42,.12);}
+.nav-links{display:flex;}
+.nav-links a{font-family:var(--glyph);font-size:10px;letter-spacing:3px;color:var(--dust);text-decoration:none;display:flex;align-items:center;justify-content:center;height:52px;border-right:1px solid rgba(201,149,42,.08);transition:color .2s,background .2s;white-space:nowrap;padding:0 20px;}
+.nav-links a:hover,.nav-links a.active{color:var(--amber2);background:rgba(201,149,42,.06);}
+.nav-hub{font-family:var(--glyph);font-size:10px;letter-spacing:3px;color:var(--dust2);text-decoration:none;transition:color .2s;display:flex;align-items:center;padding:0 20px;flex-shrink:0;border-left:1px solid rgba(201,149,42,.12);white-space:nowrap;}
+.nav-hub:hover{color:var(--amber);}
+
+/* HERO */
+#hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:100px 40px 80px;text-align:center;overflow:hidden;}
+#hero-canvas{position:absolute;inset:0;z-index:0;pointer-events:none;}
+.hero-inner{position:relative;z-index:2;}
+
+/* decorative border — cuneiform-inspired */
+.cuneiform-border{position:relative;display:inline-block;padding:32px 60px;border:1px solid rgba(201,149,42,.25);}
+.cuneiform-border::before,.cuneiform-border::after{content:'';position:absolute;width:40px;height:40px;border-color:var(--amber);border-style:solid;}
+.cuneiform-border::before{top:-2px;left:-2px;border-width:2px 0 0 2px;}
+.cuneiform-border::after{bottom:-2px;right:-2px;border-width:0 2px 2px 0;}
+.corner-tl,.corner-tr,.corner-bl,.corner-br{position:absolute;width:40px;height:40px;border-color:var(--amber);border-style:solid;}
+.corner-tl{top:-2px;left:-2px;border-width:2px 0 0 2px;}
+.corner-tr{top:-2px;right:-2px;border-width:2px 2px 0 0;}
+.corner-bl{bottom:-2px;left:-2px;border-width:0 0 2px 2px;}
+.corner-br{bottom:-2px;right:-2px;border-width:0 2px 2px 0;}
+
+.hero-eyebrow{font-family:var(--glyph);font-size:9px;letter-spacing:10px;color:var(--amber);opacity:.7;margin-bottom:20px;text-transform:uppercase;}
+.hero-title{font-family:'Cinzel Decorative',var(--glyph);font-size:clamp(36px,8vw,96px);font-weight:700;letter-spacing:4px;line-height:1;color:var(--ink);margin-bottom:8px;animation:rise .9s ease both;}
+.hero-title span{color:var(--amber2);}
+.hero-sub{font-family:var(--glyph);font-size:clamp(12px,2vw,16px);letter-spacing:8px;color:var(--dust);margin-bottom:24px;font-weight:400;}
+.hero-desc{font-family:var(--body);font-size:clamp(15px,1.8vw,18px);color:var(--ink2);max-width:580px;line-height:1.85;font-style:italic;margin:0 auto;}
+@keyframes rise{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}
+
+/* STAT ROW */
+.stat-row{display:flex;justify-content:center;gap:0;margin-top:60px;flex-wrap:wrap;}
+.stat-block{text-align:center;padding:24px 40px;border:1px solid rgba(201,149,42,.15);background:rgba(20,17,13,.8);position:relative;}
+.stat-block+.stat-block{border-left:none;}
+.stat-block::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--amber),transparent);}
+.stat-n{font-family:var(--glyph);font-size:clamp(28px,4vw,48px);font-weight:900;color:var(--amber2);}
+.stat-l{font-family:var(--glyph);font-size:8px;letter-spacing:4px;color:var(--dust);margin-top:6px;}
+
+/* SCROLL HINT */
+.scroll-down{margin-top:52px;display:flex;flex-direction:column;align-items:center;gap:10px;animation:rise .9s 1.2s ease both;opacity:0;}
+.scroll-down span{font-family:var(--glyph);font-size:8px;letter-spacing:6px;color:rgba(201,149,42,.4);}
+.scroll-line{width:1px;height:48px;background:linear-gradient(to bottom,rgba(201,149,42,.5),transparent);animation:pulse 2.2s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:.2;}50%{opacity:.9;}}
+
+/* SECTION WRAPPER */
+.section{position:relative;z-index:2;padding:80px 40px;}
+.section-inner{max-width:1200px;margin:0 auto;}
+.sec-eyebrow{font-family:var(--glyph);font-size:8px;letter-spacing:10px;color:var(--amber);opacity:.65;margin-bottom:12px;display:flex;align-items:center;gap:16px;}
+.sec-eyebrow::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(201,149,42,.3),transparent);}
+.sec-title{font-family:var(--glyph);font-size:clamp(22px,4vw,40px);font-weight:900;letter-spacing:3px;color:var(--ink);margin-bottom:16px;}
+.sec-lead{font-family:var(--body);font-size:18px;color:var(--ink2);line-height:1.8;max-width:72ch;font-style:italic;margin-bottom:48px;}
+.divider{width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(201,149,42,.3),transparent);margin:80px 0;}
+
+/* =====================
+   TIMELINE — THE SPINE
+   ===================== */
+#timeline{background:var(--stone2);}
+.timeline-wrap{position:relative;max-width:1100px;margin:0 auto;}
+/* Vertical spine via pseudo-element */
+.timeline-wrap::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,rgba(201,149,42,.4) 3%,rgba(201,149,42,.4) 97%,transparent);transform:translateX(-50%);z-index:0;}
+
+/* Era divider */
+.era-marker{position:relative;display:flex;align-items:center;justify-content:center;margin:52px 0 36px;z-index:5;}
+.era-pill{font-family:var(--glyph);font-size:9px;letter-spacing:6px;color:var(--stone);background:var(--amber);padding:5px 22px;position:relative;z-index:2;}
+.era-pill::before,.era-pill::after{content:'';position:absolute;top:50%;height:1px;background:linear-gradient(90deg,var(--amber),transparent);transform:translateY(-50%);width:120px;}
+.era-pill::before{right:100%;}
+.era-pill::after{left:100%;transform:translateY(-50%) scaleX(-1);}
+
+/* Timeline row — CSS grid: [card col] [node col 56px] [card col] */
+.titem{display:grid;grid-template-columns:1fr 56px 1fr;align-items:start;padding:16px 0;position:relative;z-index:1;}
+/* Left: card in col1, node in col2, spacer col3 */
+.titem.left .titem-card{grid-column:1;grid-row:1;text-align:right;padding-right:28px;}
+.titem.left .titem-node-wrap{grid-column:2;grid-row:1;display:flex;justify-content:center;padding-top:16px;position:relative;}
+.titem.left .titem-spacer{grid-column:3;grid-row:1;}
+/* Right: spacer col1, node col2, card col3 */
+.titem.right .titem-card{grid-column:3;grid-row:1;text-align:left;padding-left:28px;}
+.titem.right .titem-node-wrap{grid-column:2;grid-row:1;display:flex;justify-content:center;padding-top:16px;position:relative;}
+.titem.right .titem-spacer{grid-column:1;grid-row:1;}
+/* Tick lines from node to card */
+.titem.left .titem-node-wrap::before{content:'';position:absolute;top:21px;right:100%;width:28px;height:1px;background:rgba(201,149,42,.35);}
+.titem.right .titem-node-wrap::before{content:'';position:absolute;top:21px;left:100%;width:28px;height:1px;background:rgba(201,149,42,.35);}
+/* Node dot */
+.titem-node{width:11px;height:11px;border:2px solid var(--amber);background:var(--stone);border-radius:50%;z-index:3;flex-shrink:0;}
+.titem-node.major{width:16px;height:16px;background:var(--amber);box-shadow:0 0 0 3px rgba(201,149,42,.2),0 0 14px rgba(201,149,42,.35);}
+.titem-node.civ-egypt{border-color:#e8b04a;background:rgba(232,176,74,.15);}
+.titem-node.civ-sumer{border-color:#a0b8d8;background:rgba(160,184,216,.1);}
+.titem-node.civ-babylon{border-color:#c8a870;background:rgba(200,168,112,.1);}
+.titem-node.civ-persia{border-color:#c06030;background:rgba(192,96,48,.1);}
+.titem-node.civ-greece{border-color:#7090c8;background:rgba(112,144,200,.1);}
+.titem-node.civ-rome{border-color:#a83030;background:rgba(168,48,48,.1);}
+.titem-node.civ-world{border-color:#88a870;background:rgba(136,168,112,.1);}
+.titem-node.civ-precolumbian{border-color:#c8904a;background:rgba(200,144,74,.1);}
+.titem-node.civ-china{border-color:#c84040;background:rgba(200,64,64,.1);}
+.titem-node.civ-india{border-color:#e8a030;background:rgba(232,160,48,.1);}
+
+/* Card */
+.tcard{background:var(--stone3);border:1px solid rgba(201,149,42,.1);padding:18px 20px;transition:border-color .25s,box-shadow .25s;cursor:default;}
+.tcard:hover{border-color:rgba(201,149,42,.35);box-shadow:0 4px 32px rgba(0,0,0,.4);}
+.tcard-date{font-family:var(--glyph);font-size:9px;letter-spacing:4px;color:var(--amber);margin-bottom:6px;}
+.tcard-title{font-family:var(--glyph);font-size:13px;font-weight:700;letter-spacing:2px;color:var(--ink);margin-bottom:8px;line-height:1.4;}
+.tcard-body{font-family:var(--body);font-size:14px;color:var(--ink2);line-height:1.7;}
+.tcard-tag{display:inline-block;font-family:var(--glyph);font-size:7px;letter-spacing:3px;padding:2px 8px;border:1px solid;margin-top:10px;}
+.tag-egypt{border-color:rgba(232,176,74,.4);color:#e8b04a;}
+.tag-sumer{border-color:rgba(160,184,216,.4);color:#a0b8d8;}
+.tag-babylon{border-color:rgba(200,168,112,.4);color:#c8a870;}
+.tag-persia{border-color:rgba(192,96,48,.4);color:#c06030;}
+.tag-greece{border-color:rgba(112,144,200,.4);color:#7090c8;}
+.tag-rome{border-color:rgba(168,48,48,.4);color:#c84040;}
+.tag-china{border-color:rgba(200,64,64,.4);color:#e05050;}
+.tag-india{border-color:rgba(232,160,48,.4);color:#e8a030;}
+.tag-world{border-color:rgba(136,168,112,.4);color:#88a870;}
+.tag-precolumbian{border-color:rgba(200,144,74,.4);color:#c8904a;}
+.tag-science{border-color:rgba(100,160,220,.4);color:#64a0dc;}
+.tag-writing{border-color:rgba(180,140,80,.4);color:#b48c50;}
+.tag-religion{border-color:rgba(160,100,180,.4);color:#a064b4;}
+.tag-war{border-color:rgba(180,60,60,.4);color:#b43c3c;}
+
+/* CIVILIZATIONS GRID */
+#civilizations{background:var(--stone);}
+.civ-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:2px;}
+.civ-card{background:var(--stone2);padding:32px 28px;border:1px solid rgba(201,149,42,.08);transition:border-color .3s,background .3s;cursor:default;}
+.civ-card:hover{border-color:rgba(201,149,42,.3);background:var(--stone3);}
+.civ-card-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:16px;}
+.civ-glyph{font-size:32px;line-height:1;}
+.civ-meta{text-align:right;}
+.civ-period{font-family:var(--glyph);font-size:8px;letter-spacing:3px;color:var(--amber);margin-bottom:3px;}
+.civ-region{font-family:var(--glyph);font-size:7px;letter-spacing:2px;color:var(--dust);}
+.civ-name{font-family:var(--glyph);font-size:16px;font-weight:700;letter-spacing:3px;color:var(--ink);margin-bottom:8px;}
+.civ-desc{font-family:var(--body);font-size:14px;color:var(--ink2);line-height:1.75;margin-bottom:16px;}
+.civ-facts{border-top:1px solid rgba(201,149,42,.12);padding-top:14px;}
+.civ-fact{font-family:var(--body);font-size:13px;color:var(--ink3);line-height:1.6;padding:3px 0;}
+.civ-fact::before{content:'\2014';color:var(--amber);opacity:.6;margin-right:8px;}
+
+/* EGYPT SECTION */
+#egypt{background:linear-gradient(to bottom,var(--stone),#110e08,var(--stone2));}
+.pharaoh-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:32px;}
+.pharaoh-card{background:rgba(20,17,13,.9);border:1px solid rgba(201,149,42,.15);padding:22px 20px;transition:border-color .25s;}
+.pharaoh-card:hover{border-color:rgba(201,149,42,.4);}
+.pharaoh-dynasty{font-family:var(--glyph);font-size:7px;letter-spacing:4px;color:var(--amber);margin-bottom:5px;}
+.pharaoh-name{font-family:var(--glyph);font-size:13px;font-weight:700;letter-spacing:2px;color:var(--ink);margin-bottom:4px;}
+.pharaoh-reign{font-family:var(--glyph);font-size:8px;letter-spacing:2px;color:var(--dust);margin-bottom:10px;}
+.pharaoh-desc{font-family:var(--body);font-size:13px;color:var(--ink2);line-height:1.65;}
+
+/* SUMER SECTION */
+#sumer{background:var(--stone2);}
+.tablet-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;}
+.tablet-card{background:var(--stone3);border:1px solid rgba(160,184,216,.12);padding:24px 20px;position:relative;transition:border-color .25s;}
+.tablet-card::before{content:'𒀭';position:absolute;top:10px;right:14px;font-size:18px;opacity:.15;color:var(--amber3);}
+.tablet-card:hover{border-color:rgba(160,184,216,.3);}
+.tablet-label{font-family:var(--glyph);font-size:7px;letter-spacing:4px;color:#a0b8d8;margin-bottom:6px;}
+.tablet-title{font-family:var(--glyph);font-size:13px;font-weight:700;letter-spacing:2px;color:var(--ink);margin-bottom:10px;}
+.tablet-body{font-family:var(--body);font-size:14px;color:var(--ink2);line-height:1.7;}
+
+/* WORLD SPREAD */
+#world{background:var(--stone);}
+.world-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-top:32px;}
+.world-card{background:var(--stone2);border-top:2px solid;padding:24px 20px;}
+.world-card.wc-india{border-color:var(--amber);}
+.world-card.wc-china{border-color:#c84040;}
+.world-card.wc-americas{border-color:#c8904a;}
+.world-card.wc-africa{border-color:#88a870;}
+.world-card.wc-europe{border-color:#7090c8;}
+.world-card.wc-oceania{border-color:#4090a8;}
+.world-label{font-family:var(--glyph);font-size:8px;letter-spacing:5px;color:var(--dust);margin-bottom:5px;}
+.world-name{font-family:var(--glyph);font-size:15px;font-weight:700;letter-spacing:3px;color:var(--ink);margin-bottom:10px;}
+.world-body{font-family:var(--body);font-size:14px;color:var(--ink2);line-height:1.7;}
+
+/* DISCOVERIES TABLE */
+#discoveries{background:var(--stone2);}
+.disc-table{width:100%;border-collapse:collapse;font-family:var(--body);font-size:14px;}
+.disc-table thead tr{border-bottom:1px solid rgba(201,149,42,.3);}
+.disc-table th{font-family:var(--glyph);font-size:8px;letter-spacing:4px;color:var(--amber);padding:12px 16px;text-align:left;font-weight:400;}
+.disc-table td{padding:13px 16px;color:var(--ink2);border-bottom:1px solid rgba(201,149,42,.06);line-height:1.55;vertical-align:top;}
+.disc-table tr:last-child td{border-bottom:none;}
+.disc-table tr:hover td{background:rgba(201,149,42,.03);}
+.disc-date{font-family:var(--glyph);font-size:10px;letter-spacing:2px;color:var(--amber);white-space:nowrap;}
+.disc-civ{font-family:var(--glyph);font-size:8px;letter-spacing:2px;color:var(--dust);}
+.disc-name{font-family:var(--glyph);font-size:11px;letter-spacing:1px;color:var(--ink);}
+
+/* WRITING SYSTEMS */
+.writing-intro{background:var(--stone3);border-left:2px solid rgba(201,149,42,.4);padding:24px 28px;margin-bottom:36px;font-family:var(--body);font-size:16px;color:var(--ink2);line-height:1.85;max-width:82ch;}
+.writing-intro em{color:var(--amber2);font-style:italic;}
+.writing-meta-row{display:flex;flex-wrap:wrap;gap:0;margin-bottom:40px;}
+.wmeta-card{flex:1;min-width:120px;text-align:center;padding:20px 16px;border:1px solid rgba(201,149,42,.12);background:var(--stone3);}
+.wmeta-card+.wmeta-card{border-left:none;}
+.wmeta-n{font-family:var(--glyph);font-size:clamp(20px,3vw,32px);font-weight:900;color:var(--amber2);}
+.wmeta-l{font-family:var(--glyph);font-size:7px;letter-spacing:3px;color:var(--dust);margin-top:5px;}
+.glyph-section-title{font-family:var(--glyph);font-size:10px;letter-spacing:8px;color:var(--amber);border-bottom:1px solid rgba(201,149,42,.2);padding-bottom:10px;margin-bottom:16px;}
+.glyph-section-sub{font-family:var(--body);font-size:14px;color:var(--ink3);line-height:1.7;margin-bottom:24px;max-width:78ch;font-style:italic;}
+
+/* WRITING TABS */
+#writing-tabs{display:flex!important;width:100%;}
+.wtab{font-family:var(--glyph);font-size:9px;letter-spacing:3px;background:transparent;border:none;border-bottom:2px solid transparent;color:var(--dust);padding:14px 8px;cursor:pointer;transition:color .2s,border-color .2s;flex:1;text-align:center;white-space:nowrap;min-width:0;}
+.wtab:hover{color:var(--ink);}
+.wtab.active{color:var(--amber);border-bottom-color:var(--amber);}
+
+/* GLYPH CATEGORY CARDS */
+.glyph-cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-bottom:32px;}
+.glyph-cat-card{background:var(--stone3);border:1px solid rgba(201,149,42,.1);padding:20px 18px;}
+.glyph-cat-name{font-family:var(--glyph);font-size:9px;letter-spacing:4px;color:var(--amber);margin-bottom:8px;}
+.glyph-cat-desc{font-family:var(--body);font-size:13.5px;color:var(--ink2);line-height:1.7;}
+
+/* HIERO ALPHABET */
+.hiero-alphabet{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;margin-bottom:16px;}
+.ha-cell{background:var(--stone3);border:1px solid rgba(201,149,42,.1);padding:14px 12px;text-align:center;transition:border-color .2s;}
+.ha-cell:hover{border-color:rgba(201,149,42,.4);}
+.ha-glyph{font-size:28px;line-height:1.2;margin-bottom:6px;color:var(--amber3);}
+.ha-trans{font-family:var(--glyph);font-size:11px;letter-spacing:2px;color:var(--ink);margin-bottom:3px;}
+.ha-name{font-family:var(--body);font-size:11px;color:var(--dust);font-style:italic;margin-bottom:2px;}
+.ha-read{font-family:var(--body);font-size:11px;color:var(--ink3);}
+
+/* BILITERAL */
+.hiero-biliteral{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;margin-bottom:16px;}
+.hb-cell{background:var(--stone3);border:1px solid rgba(160,184,216,.1);padding:14px 12px;text-align:center;transition:border-color .2s;}
+.hb-cell:hover{border-color:rgba(160,184,216,.3);}
+.hb-glyph{font-size:26px;line-height:1.2;margin-bottom:6px;color:var(--amber3);}
+.hb-read{font-family:var(--glyph);font-size:10px;letter-spacing:2px;color:#a0b8d8;}
+.hb-name{font-family:var(--body);font-size:11px;color:var(--dust);font-style:italic;}
+.hb-meaning{font-family:var(--body);font-size:11px;color:var(--ink3);}
+
+/* DETERMINATIVES */
+.hiero-det{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:16px;}
+.hd-cell{background:var(--stone3);border:1px solid rgba(139,26,26,.2);padding:14px 16px;display:flex;align-items:flex-start;gap:14px;}
+.hd-glyph{font-size:26px;flex-shrink:0;color:var(--amber3);}
+.hd-info{}
+.hd-read{font-family:var(--glyph);font-size:9px;letter-spacing:2px;color:#c84040;margin-bottom:4px;}
+.hd-cat{font-family:var(--glyph);font-size:10px;letter-spacing:2px;color:var(--ink);margin-bottom:4px;}
+.hd-desc{font-family:var(--body);font-size:12px;color:var(--ink3);line-height:1.55;}
+
+/* CARTOUCHE */
+.cartouche-demo{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:8px;}
+.cartouche-explain{background:var(--stone3);border:1px solid rgba(201,149,42,.12);padding:22px 20px;font-family:var(--body);font-size:14px;color:var(--ink2);line-height:1.75;}
+.cartouche-examples{display:flex;flex-direction:column;gap:12px;}
+.cart-item{background:var(--stone3);border:1px solid rgba(201,149,42,.15);padding:16px 18px;}
+.cart-name{font-family:var(--glyph);font-size:10px;letter-spacing:4px;color:var(--amber);margin-bottom:6px;}
+.cart-glyphs{font-size:22px;letter-spacing:4px;color:var(--amber3);margin-bottom:6px;line-height:1.4;}
+.cart-read{font-family:var(--body);font-size:13px;color:var(--ink2);line-height:1.6;}
+
+/* EGYPT SCRIPTS */
+.egypt-scripts-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;}
+.egypt-script-card{background:var(--stone3);border-top:2px solid rgba(201,149,42,.4);padding:20px 18px;}
+.es-name{font-family:var(--glyph);font-size:11px;letter-spacing:4px;color:var(--amber2);margin-bottom:4px;}
+.es-period{font-family:var(--glyph);font-size:8px;letter-spacing:2px;color:var(--dust);margin-bottom:10px;}
+.es-desc{font-family:var(--body);font-size:13px;color:var(--ink2);line-height:1.7;}
+
+/* CUNEIFORM TABLE */
+.cunei-table-wrap{overflow-x:auto;margin-bottom:16px;}
+.cunei-table{width:100%;border-collapse:collapse;font-family:var(--body);font-size:13.5px;}
+.cunei-table thead tr{border-bottom:1px solid rgba(160,184,216,.3);}
+.cunei-table th{font-family:var(--glyph);font-size:8px;letter-spacing:4px;color:#a0b8d8;padding:10px 14px;text-align:left;font-weight:400;white-space:nowrap;}
+.cunei-table td{padding:11px 14px;color:var(--ink2);border-bottom:1px solid rgba(201,149,42,.05);vertical-align:middle;line-height:1.5;}
+.cunei-table tr:hover td{background:rgba(160,184,216,.04);}
+.cs-sign{font-size:22px;color:var(--amber3);line-height:1;}
+.cs-sumer{font-family:var(--glyph);font-size:11px;letter-spacing:2px;color:#a0b8d8;}
+.cs-akk{font-family:var(--body);font-size:12px;color:var(--dust);font-style:italic;}
+.cs-cat{font-family:var(--glyph);font-size:7px;letter-spacing:2px;padding:2px 6px;border:1px solid;display:inline-block;}
+.cs-cat.cat-god{border-color:rgba(170,100,200,.3);color:#aa64c8;}
+.cs-cat.cat-nature{border-color:rgba(100,180,100,.3);color:#64b464;}
+.cs-cat.cat-human{border-color:rgba(200,180,80,.3);color:#c8b450;}
+.cs-cat.cat-place{border-color:rgba(100,140,200,.3);color:#648cc8;}
+.cs-cat.cat-action{border-color:rgba(200,100,80,.3);color:#c86450;}
+.cs-cat.cat-object{border-color:rgba(180,180,100,.3);color:#b4b464;}
+.cs-cat.cat-number{border-color:rgba(160,160,160,.3);color:#a0a0a0;}
+.cs-cat.cat-abstract{border-color:rgba(160,100,160,.3);color:#a064a0;}
+
+/* CUNEIFORM EVOLUTION */
+.cunei-evolution{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;margin-bottom:16px;}
+.ce-step{background:var(--stone3);border:1px solid rgba(160,184,216,.1);padding:16px 14px;text-align:center;}
+.ce-era{font-family:var(--glyph);font-size:7px;letter-spacing:3px;color:#a0b8d8;margin-bottom:6px;}
+.ce-sign{font-size:28px;color:var(--amber3);margin-bottom:6px;line-height:1.3;}
+.ce-name{font-family:var(--glyph);font-size:9px;letter-spacing:2px;color:var(--ink);margin-bottom:5px;}
+.ce-desc{font-family:var(--body);font-size:11.5px;color:var(--ink3);line-height:1.55;}
+
+/* CUNEIFORM HOW */
+.cunei-how-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-bottom:16px;}
+.cunei-how-card{background:var(--stone3);border:1px solid rgba(160,184,216,.1);padding:20px 18px;}
+.chow-title{font-family:var(--glyph);font-size:9px;letter-spacing:4px;color:#a0b8d8;margin-bottom:8px;}
+.chow-body{font-family:var(--body);font-size:13.5px;color:var(--ink2);line-height:1.7;}
+
+/* CUNEIFORM LANGUAGES */
+.cunei-langs{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;margin-bottom:16px;}
+.cl-card{background:var(--stone3);border:1px solid rgba(160,184,216,.1);padding:16px 18px;}
+.cl-name{font-family:var(--glyph);font-size:11px;letter-spacing:3px;color:#a0b8d8;margin-bottom:3px;}
+.cl-period{font-family:var(--glyph);font-size:7px;letter-spacing:2px;color:var(--dust);margin-bottom:8px;}
+.cl-body{font-family:var(--body);font-size:13px;color:var(--ink2);line-height:1.65;}
+
+/* TABLET INFO */
+.tablet-info-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;}
+.ti-card{background:var(--stone3);border-left:2px solid rgba(160,184,216,.3);padding:18px 18px;}
+.ti-title{font-family:var(--glyph);font-size:9px;letter-spacing:4px;color:#a0b8d8;margin-bottom:8px;}
+.ti-body{font-family:var(--body);font-size:13px;color:var(--ink2);line-height:1.7;}
+
+/* LINEAGE TREE */
+.lineage-tree{background:var(--stone3);border:1px solid rgba(201,149,42,.12);padding:32px;margin-bottom:16px;overflow-x:auto;}
+.lt-root{display:flex;gap:0;justify-content:center;flex-wrap:wrap;}
+.lt-origin{text-align:center;padding:20px 16px;min-width:160px;}
+.lt-origin-name{font-family:var(--glyph);font-size:11px;letter-spacing:3px;color:var(--amber);margin-bottom:4px;}
+.lt-origin-date{font-family:var(--glyph);font-size:7px;letter-spacing:2px;color:var(--dust);margin-bottom:10px;}
+.lt-origin-note{font-family:var(--body);font-size:12px;color:var(--ink3);}
+.lt-arrow{font-size:20px;color:rgba(201,149,42,.4);text-align:center;padding:4px;}
+.lt-descendant{background:var(--stone);border:1px solid rgba(201,149,42,.1);padding:10px 14px;margin:4px;display:inline-block;text-align:center;}
+.lt-d-name{font-family:var(--glyph);font-size:9px;letter-spacing:2px;color:var(--ink);margin-bottom:2px;}
+.lt-d-date{font-family:var(--glyph);font-size:6px;letter-spacing:2px;color:var(--dust);}
+.lt-section{margin-bottom:24px;}
+.lt-sec-title{font-family:var(--glyph);font-size:8px;letter-spacing:5px;color:var(--amber);margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid rgba(201,149,42,.15);}
+.lt-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+
+/* INDEPENDENT SCRIPTS */
+.independent-scripts{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-bottom:16px;}
+.is-card{background:var(--stone3);border:1px solid rgba(201,149,42,.1);padding:20px 18px;}
+.is-status{font-family:var(--glyph);font-size:7px;letter-spacing:4px;padding:2px 8px;border:1px solid;display:inline-block;margin-bottom:10px;}
+.is-deciphered{border-color:rgba(100,180,100,.4);color:#64b464;}
+.is-undeciphered{border-color:rgba(200,80,80,.4);color:#c85050;}
+.is-partial{border-color:rgba(200,160,50,.4);color:#c8a032;}
+.is-name{font-family:var(--glyph);font-size:13px;letter-spacing:3px;color:var(--ink);margin-bottom:4px;}
+.is-date{font-family:var(--glyph);font-size:8px;letter-spacing:2px;color:var(--dust);margin-bottom:10px;}
+.is-body{font-family:var(--body);font-size:13px;color:var(--ink2);line-height:1.7;}
+
+/* ROSETTA */
+.rosetta-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;}
+.rosetta-card{background:var(--stone3);border-top:2px solid rgba(139,26,26,.4);padding:20px 18px;}
+.rs-title{font-family:var(--glyph);font-size:9px;letter-spacing:5px;color:#c84040;margin-bottom:8px;}
+.rs-body{font-family:var(--body);font-size:13px;color:var(--ink2);line-height:1.7;}
+
+/* FOOTER */
+footer{position:relative;z-index:2;padding:60px 40px;text-align:center;border-top:1px solid rgba(201,149,42,.12);}
+.footer-logo{font-family:'Cinzel Decorative',var(--glyph);font-size:18px;font-weight:700;letter-spacing:8px;color:var(--amber);margin-bottom:12px;}
+.footer-line{font-family:var(--glyph);font-size:8px;letter-spacing:5px;color:var(--dust);margin-bottom:8px;}
+.footer-sig{font-family:var(--glyph);font-size:9px;letter-spacing:4px;color:var(--dust2);margin-top:28px;}
+
+/* RESPONSIVE */
+@media(max-width:720px){
+  /* Timeline: single column on mobile — spine on left edge */
+  .timeline-wrap::before{left:14px;transform:none;}
+  .titem{grid-template-columns:28px 1fr!important;grid-template-rows:auto;}
+  .titem.left .titem-card,.titem.right .titem-card{grid-column:2!important;grid-row:1!important;text-align:left!important;padding-left:16px!important;padding-right:0!important;}
+  .titem.left .titem-node-wrap,.titem.right .titem-node-wrap{grid-column:1!important;grid-row:1!important;}
+  .titem.left .titem-spacer,.titem.right .titem-spacer{display:none!important;}
+  .titem.left .titem-node-wrap::before,.titem.right .titem-node-wrap::before{display:none!important;}
+  .nav-logo{padding:0 14px;font-size:10px;letter-spacing:3px;}
+  .stat-block{padding:16px 18px;}
+  .section{padding:60px 20px;}
+  .cuneiform-border{padding:24px 20px;}
+  .stat-row{flex-direction:column;align-items:center;}
+  .stat-block+.stat-block{border-left:1px solid rgba(201,149,42,.15);border-top:none;}
+}
+/* NAV ACTIVE ON SCROLL */
+.nav-links a{scroll-snap-type:x mandatory;}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="topnav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#hero">ORIGINS</a>
+    <div class="nav-links">
+      <a href="#timeline" onclick="setActive(this)">TIMELINE</a>
+      <a href="#civilizations" onclick="setActive(this)">EMPIRES</a>
+      <a href="#egypt" onclick="setActive(this)">EGYPT</a>
+      <a href="#sumer" onclick="setActive(this)">SUMER</a>
+      <a href="#writing" onclick="setActive(this)">WRITING</a>
+      <a href="#world" onclick="setActive(this)">WORLD</a>
+      <a href="#discoveries" onclick="setActive(this)">INVENTIONS</a>
+    </div>
+    <a class="nav-hub" href="https://avidaa1.github.io" target="_blank" rel="noopener">AVIDAA &#x2197;</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-inner">
+    <div class="cuneiform-border">
+      <div class="corner-tl"></div><div class="corner-tr"></div>
+      <div class="corner-bl"></div><div class="corner-br"></div>
+      <div class="hero-eyebrow">AVIDAA &nbsp;&bull;&nbsp; THE RECORD</div>
+      <div class="hero-title">ORI<span>GINS</span></div>
+      <div class="hero-sub">CIVILIZATION &nbsp;&middot;&nbsp; DEEP TIME &nbsp;&middot;&nbsp; THE WORLD</div>
+      <div class="hero-desc">
+        From the first marks pressed into wet clay on the banks of the Euphrates,
+        to the pharaohs who built in stone meant to outlast time itself &mdash;
+        this is the full record. Every era. Every empire. Every discovery.
+      </div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-block"><div class="stat-n">5,500+</div><div class="stat-l">YEARS OF WRITTEN RECORD</div></div>
+      <div class="stat-block"><div class="stat-n">30+</div><div class="stat-l">MAJOR CIVILIZATIONS</div></div>
+      <div class="stat-block"><div class="stat-n">~3,000</div><div class="stat-l">EGYPTIAN DEITIES</div></div>
+      <div class="stat-block"><div class="stat-n">c. 3100</div><div class="stat-l">BCE &mdash; FIRST WRITING</div></div>
+    </div>
+    <div class="scroll-down"><span>SCROLL</span><div class="scroll-line"></div></div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section" id="timeline" style="background:var(--stone2);padding-bottom:100px;">
+  <div class="section-inner">
+    <div class="sec-eyebrow">THE FULL RECORD</div>
+    <div class="sec-title">World Timeline</div>
+    <div class="sec-lead">
+      From the first hunter-gatherer settlements to the collapse of the ancient world &mdash;
+      every major turning point, in order, on the spine.
+    </div>
+
+    <div class="timeline-wrap" id="timelineWrap">
+      <!-- Timeline items injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- CIVILIZATIONS -->
+<section class="section" id="civilizations">
+  <div class="section-inner">
+    <div class="sec-eyebrow">THE GREAT POWERS</div>
+    <div class="sec-title">Civilizations</div>
+    <div class="sec-lead">The foundational empires that shaped language, law, science, and the idea of the state.</div>
+    <div class="civ-grid" id="civGrid"></div>
+  </div>
+</section>
+
+<!-- EGYPT -->
+<section class="section" id="egypt">
+  <div class="section-inner">
+    <div class="sec-eyebrow">KEMET &mdash; THE BLACK LAND</div>
+    <div class="sec-title">Ancient Egypt</div>
+    <div class="sec-lead">
+      3,000 years of continuous civilization. No empire in human history endured longer.
+      They built in stone meant to outlast the stars.
+    </div>
+
+    <!-- Egypt fact blocks -->
+    <div class="civ-grid" id="egyptFacts"></div>
+
+    <div style="margin-top:48px;">
+      <div class="sec-eyebrow" style="margin-bottom:16px;">THE PHARAOHS &mdash; A SELECTION</div>
+      <div class="pharaoh-grid" id="pharaohGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SUMER -->
+<section class="section" id="sumer">
+  <div class="section-inner">
+    <div class="sec-eyebrow">KI-EN-GIR &mdash; THE LAND OF CIVILIZED LORDS</div>
+    <div class="sec-title">Sumer &amp; Mesopotamia</div>
+    <div class="sec-lead">
+      The first cities. The first writing. The first law code. The first flood story.
+      Sumer invented civilization and Mesopotamia perfected it.
+    </div>
+
+    <div class="tablet-grid" id="sumerGrid"></div>
+
+    <div style="margin-top:48px;">
+      <div class="sec-eyebrow" style="margin-bottom:16px;">THE MESOPOTAMIAN SUCCESSION</div>
+      <div class="tablet-grid" id="mesopotamiaGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- THE WORLD -->
+<section class="section" id="world">
+  <div class="section-inner">
+    <div class="sec-eyebrow">PARALLEL WORLDS</div>
+    <div class="sec-title">The World Beyond</div>
+    <div class="sec-lead">While Sumer pressed clay and Egypt carved stone, every other corner of Earth was building its own record.</div>
+    <div class="world-grid" id="worldGrid"></div>
+  </div>
+</section>
+
+<!-- DISCOVERIES -->
+<section class="section" id="discoveries">
+  <div class="section-inner">
+    <div class="sec-eyebrow">WHAT THEY GAVE US</div>
+    <div class="sec-title">First Discoveries</div>
+    <div class="sec-lead">The inventions that travel forward in time through every generation.</div>
+    <table class="disc-table" id="discTable">
+      <thead>
+        <tr>
+          <th>DATE</th>
+          <th>CIVILIZATION</th>
+          <th>DISCOVERY</th>
+          <th>SIGNIFICANCE</th>
+        </tr>
+      </thead>
+      <tbody id="discBody"></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- WRITING SYSTEMS -->
+<section class="section" id="writing" style="background:linear-gradient(to bottom,var(--stone2),#0f0c08,var(--stone2));">
+  <div class="section-inner">
+    <div class="sec-eyebrow">THE FIRST SCRIPTS</div>
+    <div class="sec-title">Writing Systems</div>
+    <div class="sec-lead">
+      Two writing systems invented independently, 5,000 years ago, within 100 years of each other.
+      Every word you read today descends from one of them.
+    </div>
+
+    <!-- WRITING SYSTEM TABS -->
+    <div id="writing-tabs" style="display:flex;gap:0;margin-bottom:32px;border-bottom:1px solid rgba(201,149,42,.2);">
+      <button class="wtab active" id="wtab-hiero" onclick="wTab('hiero',this)">HIEROGLYPHS</button>
+      <button class="wtab" id="wtab-cunei" onclick="wTab('cunei',this)">CUNEIFORM</button>
+      <button class="wtab" id="wtab-lineage" onclick="wTab('lineage',this)">SCRIPT LINEAGE</button>
+    </div>
+
+    <!-- HIEROGLYPHS PANEL -->
+    <div id="wpanel-hiero">
+      <div class="writing-intro">
+        <p>Ancient Egyptian hieroglyphs — from the Greek <em>hieroglyphika grammata</em> (sacred carved letters) — were used for 3,500 years, from c. 3,100 BCE to 394 CE. The system combines three types of signs: logograms (one sign = one word), phonograms (signs for sounds), and determinatives (silent classifiers). The same sign can function as all three depending on context. Deciphered by Jean-Fran&#231;ois Champollion in 1822 using the Rosetta Stone.</p>
+      </div>
+
+      <div class="writing-meta-row">
+        <div class="wmeta-card"><div class="wmeta-n">700+</div><div class="wmeta-l">COMMON SIGNS</div></div>
+        <div class="wmeta-card"><div class="wmeta-n">~6,000</div><div class="wmeta-l">TOTAL SIGNS (PTOLEMAIC)</div></div>
+        <div class="wmeta-card"><div class="wmeta-n">3,500</div><div class="wmeta-l">YEARS IN USE</div></div>
+        <div class="wmeta-card"><div class="wmeta-n">1822</div><div class="wmeta-l">CE DECIPHERED</div></div>
+      </div>
+
+      <div class="glyph-section-title">CATEGORIES OF HIEROGLYPHIC SIGNS</div>
+      <div class="glyph-cat-grid">
+        <div class="glyph-cat-card">
+          <div class="glyph-cat-name">LOGOGRAMS</div>
+          <div class="glyph-cat-desc">One sign represents one word or morpheme directly. The sign looks like the thing it means. Example: &#x1F39F; (sun disc) = <em>r&#x0259;</em> (sun, also the god Ra).</div>
+        </div>
+        <div class="glyph-cat-card">
+          <div class="glyph-cat-name">PHONOGRAMS</div>
+          <div class="glyph-cat-desc">Signs represent sounds — one consonant (uniliteral), two consonants (biliteral), or three consonants (triliteral). No vowels written — readers supplied them from context.</div>
+        </div>
+        <div class="glyph-cat-card">
+          <div class="glyph-cat-name">DETERMINATIVES</div>
+          <div class="glyph-cat-desc">Silent signs placed at the end of a word to clarify its category. A seated man &#x1333; after any word tells the reader: this word refers to a man or his actions.</div>
+        </div>
+        <div class="glyph-cat-card">
+          <div class="glyph-cat-name">DIRECTION</div>
+          <div class="glyph-cat-desc">Read in the direction the signs face. Animals and people face the start of the text. Can be written right-to-left, left-to-right, or top-to-bottom. Context determines direction.</div>
+        </div>
+      </div>
+
+      <div class="glyph-section-title" style="margin-top:40px;">UNILITERAL ALPHABET — THE 24 CORE SIGNS</div>
+      <div class="glyph-section-sub">Each sign represents a single consonant. Ancient Egyptian had no written vowels. This table is the backbone of the writing system.</div>
+      <div class="hiero-alphabet" id="hieroAlphabet"></div>
+
+      <div class="glyph-section-title" style="margin-top:44px;">BILITERAL SIGNS — TWO-CONSONANT SIGNS</div>
+      <div class="glyph-section-sub">These signs represent two consonants in sequence. Frequently combined with uniliteral phonetic complements that restate the consonants already written — a confirmation device, not redundancy.</div>
+      <div class="hiero-biliteral" id="hieroBiliteral"></div>
+
+      <div class="glyph-section-title" style="margin-top:44px;">KEY DETERMINATIVES</div>
+      <div class="glyph-section-sub">Determinatives are placed after words to indicate the semantic category. They are never pronounced.</div>
+      <div class="hiero-det" id="hieroDet"></div>
+
+      <div class="glyph-section-title" style="margin-top:44px;">HOW TO READ: CARTOUCHE EXAMPLE</div>
+      <div class="cartouche-demo">
+        <div class="cartouche-explain">
+          <p>A <strong>cartouche</strong> (Egyptian: <em>shenu</em>) is an oval loop enclosing the throne name and birth name of a pharaoh. The loop represents a rope tied at the bottom, symbolising the pharaoh ruling over everything the sun encircles. Champollion\'s ability to identify proper names in cartouches was the key to deciphering hieroglyphs.</p>
+        </div>
+        <div class="cartouche-examples" id="cartoucheEx"></div>
+      </div>
+
+      <div class="glyph-section-title" style="margin-top:44px;">THE THREE SCRIPTS OF EGYPT</div>
+      <div class="egypt-scripts-grid">
+        <div class="egypt-script-card">
+          <div class="es-name">HIEROGLYPHIC</div>
+          <div class="es-period">c. 3100 BCE – 394 CE</div>
+          <div class="es-desc">Monumental script. Carved in stone on temples, tombs, and obelisks. Formal, complex, and slow to write. Each sign carefully rendered. Used for religious and royal purposes exclusively from c. 1000 BCE onward.</div>
+        </div>
+        <div class="egypt-script-card">
+          <div class="es-name">HIERATIC</div>
+          <div class="es-period">c. 3200 BCE – 7th century CE</div>
+          <div class="es-desc">Cursive simplification of hieroglyphs. Written with reed brush on papyrus. Used for administrative documents, letters, medical texts, and literature. Signs recognisably derived from hieroglyphs but heavily abbreviated. Written right-to-left.</div>
+        </div>
+        <div class="egypt-script-card">
+          <div class="es-name">DEMOTIC</div>
+          <div class="es-period">c. 650 BCE – 5th century CE</div>
+          <div class="es-desc">Further cursive simplification of Hieratic. Used for legal documents, commercial transactions, and personal letters. Far removed visually from the original hieroglyphs. One of the three scripts on the Rosetta Stone.</div>
+        </div>
+        <div class="egypt-script-card">
+          <div class="es-name">COPTIC</div>
+          <div class="es-period">c. 200 CE – present (liturgical)</div>
+          <div class="es-desc">The final form of the Egyptian language. Written in Greek alphabet plus 6–7 extra signs for Egyptian sounds absent in Greek. The only form of Egyptian in which vowels are recorded — critically important for understanding how hieroglyphs were pronounced.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CUNEIFORM PANEL -->
+    <div id="wpanel-cunei" style="display:none;">
+      <div class="writing-intro">
+        <p>Cuneiform — from the Latin <em>cuneus</em> (wedge) — is the world\'s oldest writing system, invented in Sumer c. 3,200 BCE and used until c. 100 CE. It was pressed into wet clay tablets with a cut reed stylus, producing wedge-shaped impressions. Beginning as pictograms, it rapidly abstracted into phonetic signs. Used to write at least 15 different languages across 3,000 years. Deciphered by Henry Rawlinson in 1857 using the Behistun Inscription.</p>
+      </div>
+
+      <div class="writing-meta-row">
+        <div class="wmeta-card"><div class="wmeta-n">700+</div><div class="wmeta-l">COMMON SIGNS</div></div>
+        <div class="wmeta-card"><div class="wmeta-n">15+</div><div class="wmeta-l">LANGUAGES WRITTEN</div></div>
+        <div class="wmeta-card"><div class="wmeta-n">~500,000</div><div class="wmeta-l">CLAY TABLETS SURVIVING</div></div>
+        <div class="wmeta-card"><div class="wmeta-n">1857</div><div class="wmeta-l">CE DECIPHERED</div></div>
+      </div>
+
+      <div class="glyph-section-title">EVOLUTION: PICTOGRAM TO CUNEIFORM</div>
+      <div class="cunei-evolution" id="cuneiEvolution"></div>
+
+      <div class="glyph-section-title" style="margin-top:44px;">CORE CUNEIFORM SIGNS — SUMEROGRAM TABLE</div>
+      <div class="glyph-section-sub">The following signs are among the most frequently used in Sumerian and Akkadian texts. Each entry shows the sign, its Sumerian reading, Akkadian equivalent where known, and meaning.</div>
+      <div class="cunei-table-wrap">
+        <table class="cunei-table" id="cuneiTable">
+          <thead>
+            <tr>
+              <th>SIGN</th>
+              <th>SUMERIAN</th>
+              <th>AKKADIAN</th>
+              <th>MEANING</th>
+              <th>CATEGORY</th>
+            </tr>
+          </thead>
+          <tbody id="cuneiBody"></tbody>
+        </table>
+      </div>
+
+      <div class="glyph-section-title" style="margin-top:44px;">THE CUNEIFORM WRITING SYSTEM — HOW IT WORKS</div>
+      <div class="cunei-how-grid">
+        <div class="cunei-how-card">
+          <div class="chow-title">LOGOGRAMS (SUMEROGRAMS)</div>
+          <div class="chow-body">A sign represents an entire word. 𒀭 (DINGIR) = god/divine. 𒆳 (KALAM/MAT) = land/country. 𒂗 (EN) = lord. Often used as ideograms in later Akkadian even when the Sumerian word was no longer spoken — like using &amp; for "and".</div>
+        </div>
+        <div class="cunei-how-card">
+          <div class="chow-title">SYLLABOGRAMS</div>
+          <div class="chow-body">Signs represent syllables (CV, VC, or CVC structure). The Akkadian syllabary has ~100 common syllabic signs. Example: 𒀀 (a), 𒀊 (ab), 𒀋 (ad), 𒀍 (ag). Signs can be combined: a+ba = aba. Sumerian used fewer syllabic combinations than Akkadian.</div>
+        </div>
+        <div class="cunei-how-card">
+          <div class="chow-title">DETERMINATIVES</div>
+          <div class="chow-body">Silent classifiers, like Egyptian determinatives. 𒀭 (DINGIR) before a divine name = this is a god. 𒀳 (URU) before a place name = this is a city. 𒇽 (LU2) before a profession = this is a male person. Written but not pronounced.</div>
+        </div>
+        <div class="cunei-how-card">
+          <div class="chow-title">PHONETIC COMPLEMENTS</div>
+          <div class="chow-body">Additional signs added to a logogram to clarify its pronunciation in context — the same device used in hieroglyphs. A sign may be read as a logogram in one context and a syllabogram in another. Context and convention determine which reading applies.</div>
+        </div>
+      </div>
+
+      <div class="glyph-section-title" style="margin-top:44px;">LANGUAGES WRITTEN IN CUNEIFORM</div>
+      <div class="cunei-langs" id="cuneiLangs"></div>
+
+      <div class="glyph-section-title" style="margin-top:44px;">THE CLAY TABLET — MEDIUM OF RECORD</div>
+      <div class="tablet-info-grid">
+        <div class="ti-card">
+          <div class="ti-title">MATERIAL</div>
+          <div class="ti-body">River clay from the Tigris/Euphrates floodplain. Cheap, abundant, durable when fired. A clay tablet survives fire that destroys papyrus — ironically, fires that burned ancient archives often preserved the records within by baking the clay tablets hard.</div>
+        </div>
+        <div class="ti-card">
+          <div class="ti-title">TOOL</div>
+          <div class="ti-body">A cut reed stylus — triangular cross-section. Pressed into the clay at an angle to produce the characteristic wedge (cuneiform) impressions. Different angles and depths of the wedge create different signs. A skilled scribe could write ~100 signs per minute.</div>
+        </div>
+        <div class="ti-card">
+          <div class="ti-title">SCALE</div>
+          <div class="ti-body">~500,000 tablets survive in museum collections worldwide. An estimated 90%+ remain unread and unpublished. The Library of Ashurbanipal (Nineveh, c. 650 BCE) contained 30,000+ tablets — the world\'s first systematic library, organised by subject.</div>
+        </div>
+        <div class="ti-card">
+          <div class="ti-title">CONTENT</div>
+          <div class="ti-body">Grain accounts (oldest), beer rations, temple inventories, royal decrees, law codes, astronomical observations, mathematical tables, medical recipes, contracts, letters, dictionaries, poetry, mythology, and the Epic of Gilgamesh. Every aspect of Mesopotamian life recorded.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT LINEAGE PANEL -->
+    <div id="wpanel-lineage" style="display:none;">
+      <div class="writing-intro">
+        <p>Writing did not spread — it was reinvented. Cuneiform and hieroglyphs were independent inventions. But from them (and a handful of other origins) every writing system on Earth either descends directly or was inspired by contact. This is the complete lineage from the first marks on clay to every alphabet in use today.</p>
+      </div>
+
+      <div class="lineage-tree" id="lineageTree"></div>
+
+      <div class="glyph-section-title" style="margin-top:48px;">ALL KNOWN INDEPENDENT WRITING INVENTIONS</div>
+      <div class="glyph-section-sub">Writing was independently invented at most 5–7 times. Every other script derives from one of these origins. 24 systems below — independent origins, the full alphabet family, Asian traditions, and the undeciphered mysteries.</div>
+      <div class="independent-scripts" id="indepScripts"></div>
+
+      <div class="glyph-section-title" style="margin-top:44px;">THE ROSETTA STONE & DECIPHERMENT</div>
+      <div class="rosetta-grid">
+        <div class="rosetta-card">
+          <div class="rs-title">THE STONE</div>
+          <div class="rs-body">Discovered in 1799 by French soldiers during Napoleon\'s Egyptian campaign at Rashid (Rosetta). A granite stele inscribed with the same decree (196 BCE, Ptolemy V) in three scripts: hieroglyphics (top), Demotic (middle), Ancient Greek (bottom). The Greek was readable — providing the key to the others.</div>
+        </div>
+        <div class="rosetta-card">
+          <div class="rs-title">CHAMPOLLION</div>
+          <div class="rs-body">Jean-Fran&#231;ois Champollion (1790–1832), French scholar. On 14 September 1822, he identified that cartouches contained phonetically spelled royal names — proving the system was partly phonetic, not purely symbolic. He published his findings the same day. The date is considered the birth of Egyptology.</div>
+        </div>
+        <div class="rosetta-card">
+          <div class="rs-title">BEHISTUN INSCRIPTION</div>
+          <div class="rs-body">The cuneiform equivalent of the Rosetta Stone. Carved 520 BCE by Darius I on a 15m-high cliff in western Iran. The same text in three cuneiform scripts: Old Persian, Elamite, Babylonian. Henry Rawlinson copied and deciphered it 1835–1857. Old Persian was partially known — it provided the key to Babylonian cuneiform.</div>
+        </div>
+        <div class="rosetta-card">
+          <div class="rs-title">WHAT WAS LOST</div>
+          <div class="rs-body">Undeciphered scripts still withhold their knowledge: Linear A (Minoan, c. 1800–1450 BCE), the Indus Valley Script (c. 3300–1300 BCE), Proto-Sinaitic (the critical link between hieroglyphs and the alphabet, c. 1850 BCE), Rongorongo (Easter Island, c. 1200 CE), and several Mesoamerican scripts.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">ORIGINS</div>
+  <div class="footer-line">AVIDAA &nbsp;&bull;&nbsp; THE RECORD</div>
+  <div class="footer-line" style="color:var(--dust2);font-size:7px;margin-top:8px;">
+    Content sourced from primary archaeological records, UNESCO, British Museum, Metropolitan Museum of Art,<br>
+    Oriental Institute, Cambridge Ancient History, and verified Egyptological literature.
+  </div>
+  <div class="footer-sig">AVIDAA &nbsp;&#x2022;&nbsp; IO</div>
+</footer>
+
+<script>
+// ===================== TIMELINE DATA =====================
+const TIMELINE=[
+  // PRE-CIVILIZATION
+  {date:'c. 3.3 Ma BCE',title:'Oldest Stone Tools',body:'Lomekwi tools, Kenya — earliest known human-crafted stone tools, 700,000 years before Homo sapiens.',civ:'world',node:'major',tag:'world'},
+  {date:'c. 300,000 BCE',title:'Homo sapiens Emerges',body:'Earliest anatomically modern humans appear in North Africa (Jebel Irhoud, Morocco). Fossils dated 315,000 ± 34,000 ya.',civ:'world',node:'major',tag:'world'},
+  {date:'c. 70,000 BCE',title:'Out of Africa',body:'A small group of Homo sapiens — possibly as few as 1,000–10,000 individuals — migrates out of Africa. All non-African humans descend from this event.',civ:'world',node:'major',tag:'world'},
+  {date:'c. 40,000 BCE',title:'Cave Art',body:'Chauvet Cave, France (oldest confirmed). El Castillo, Spain. Sulawesi, Indonesia — pigs and warty pigs at 45,500 ya. Art is simultaneously born across the world.',civ:'world',node:'',tag:'world'},
+  {date:'c. 10,000 BCE',title:'Agricultural Revolution',body:'Independent invention of agriculture in the Fertile Crescent, China, New Guinea, and Mesoamerica. Wheat, barley, lentils, pigs, cattle, sheep domesticated.',civ:'world',node:'major',tag:'world'},
+  {date:'c. 9,600 BCE',title:'G&#246;bekli Tepe',body:'Southeastern Turkey. The world\'s oldest known monumental structure — a temple complex built by hunter-gatherers, predating pottery and farming. Built ~6,000 years before Stonehenge.',civ:'world',node:'',tag:'world'},
+  {date:'c. 7,500 BCE',title:'&#199;atalh&#246;y&#252;k Founded',body:'Central Anatolia, Turkey. One of the world\'s earliest large proto-cities, population ~5,000–10,000. No streets — entered through roof holes. First urban planning.',civ:'world',node:'',tag:'world'},
+
+  // SUMER ERA
+  {date:'c. 5,500 BCE',title:'Ubaid Period Begins',body:'Southern Mesopotamia. Earliest villages on the flood plains of the Tigris and Euphrates. First irrigation canals dug. Foundation of Sumerian culture.',civ:'sumer',node:'',tag:'sumer'},
+  {date:'c. 4,500 BCE',title:'Uruk Emerges',body:'Southern Iraq. World\'s first true city grows from a Ubaid village to a metropolis of ~80,000–100,000 people. Massive temple complex (Eanna) dedicated to Inanna.',civ:'sumer',node:'major',tag:'sumer'},
+  {date:'c. 3,500 BCE',title:'Uruk Period Peak',body:'Uruk extends commercial networks from Egypt to Afghanistan. A city-state running long-distance trade in obsidian, lapis lazuli, silver, and grain.',civ:'sumer',node:'',tag:'sumer'},
+  {date:'c. 3,200 BCE',title:'Cuneiform Writing Invented',body:'Uruk, Sumer. First writing system — pictographic marks on clay tablets recording grain and livestock transactions. The world\'s first bureaucracy. Language: proto-Sumerian.',civ:'sumer',node:'major',tag:'writing'},
+  {date:'c. 3,100 BCE',title:'Egyptian Hieroglyphs',body:'Egypt. The world\'s second independently invented writing system appears almost simultaneously, initially as administrative labels on grave goods at Abydos.',civ:'egypt',node:'major',tag:'writing'},
+  {date:'c. 3,100 BCE',title:'Egypt Unified &mdash; First Dynasty',body:'Narmer (Menes) unifies Upper and Lower Egypt. The double crown. Memphis founded as capital. The pharaonic state begins — unbroken for 3,000 years.',civ:'egypt',node:'major',tag:'egypt'},
+  {date:'c. 2,900 BCE',title:'Early Dynastic Sumer',body:'City-state competition: Ur, Lagash, Nippur, Kish, Eridu, Umma. First recorded war (Lagash vs Umma, c. 2,450 BCE). The first standing armies.',civ:'sumer',node:'',tag:'sumer'},
+  {date:'c. 2,780 BCE',title:'Egyptian Old Kingdom Begins',body:'Third Dynasty. Zoser and the Step Pyramid at Saqqara (2,650 BCE) — first pyramid. Imhotep, the world\'s first named architect, designs it.',civ:'egypt',node:'',tag:'egypt'},
+  {date:'c. 2,560 BCE',title:'Great Pyramid of Giza',body:'Khufu (Cheops), Fourth Dynasty. 2.3 million stones, average 2.5 tonnes. Precise north alignment to within 0.05 degrees. Tallest structure on Earth for 3,800 years.',civ:'egypt',node:'major',tag:'egypt'},
+  {date:'c. 2,334 BCE',title:'Sargon of Akkad',body:'First empire in world history. Sargon of Akkad conquers all Sumerian city-states and extends control from the Persian Gulf to the Mediterranean. Akkadian language spreads across Mesopotamia.',civ:'sumer',node:'major',tag:'sumer'},
+  {date:'c. 2,112 BCE',title:'Third Dynasty of Ur (Ur III)',body:'Ur-Nammu founds Ur III. The world\'s oldest surviving law code (Laws of Ur-Nammu, c. 2,100 BCE) — predates Hammurabi by 300 years. Height of Sumerian power.',civ:'sumer',node:'',tag:'sumer'},
+  {date:'c. 2,055 BCE',title:'Egyptian Middle Kingdom',body:'Reunification after First Intermediate Period. Trade expands to Punt, Nubia, the Levant. Thebes rises. Literature flourishes — Story of Sinuhe, Wisdom of Amenemhat.',civ:'egypt',node:'',tag:'egypt'},
+  {date:'c. 2,000 BCE',title:'Epic of Gilgamesh Written',body:'Babylon. World\'s oldest surviving major work of literature. Gilgamesh, King of Uruk, seeks immortality after his friend Enkidu dies. Contains the flood narrative 1,000 years before the Biblical version.',civ:'babylon',node:'major',tag:'world'},
+  {date:'c. 1,900 BCE',title:'Indus Valley Peak',body:'Mohenjo-daro and Harappa reach peak population (~35,000–80,000 each). Advanced sewage systems, standardised bricks, decimal weights and measures. Undeciphered script.',civ:'india',node:'',tag:'india'},
+  {date:'c. 1,792 BCE',title:'Hammurabi &mdash; Old Babylon',body:'King Hammurabi unifies Mesopotamia. The Code of Hammurabi (282 laws) — first comprehensive legal code. Eye for an eye. Recorded on a 2.25m black diorite stele, now in the Louvre.',civ:'babylon',node:'major',tag:'babylon'},
+  {date:'c. 1,600 BCE',title:'Hyksos Invade Egypt',body:'Second Intermediate Period. Hyksos bring the horse-drawn chariot, composite bow, and bronze weapons to Egypt — transforming Egyptian warfare.',civ:'egypt',node:'',tag:'egypt'},
+  {date:'c. 1,550 BCE',title:'Egyptian New Kingdom',body:'The imperial age. Ahmose I expels the Hyksos. Thutmose III — the Napoleon of Egypt — campaigns across Syria and Palestine 17 times. Egypt controls from Sudan to the Euphrates.',civ:'egypt',node:'major',tag:'egypt'},
+  {date:'c. 1,500 BCE',title:'Vedas Composed',body:'Northwestern India. The Rigveda — oldest text in any Indo-European language — composed orally. Foundation of Hinduism. The Vedic period reshapes the Indian subcontinent.',civ:'india',node:'',tag:'india'},
+  {date:'c. 1,353 BCE',title:'Akhenaten &mdash; The Heretic Pharaoh',body:'Amenhotep IV renames himself Akhenaten, closes all temples, bans polytheism, declares Aten (the sun disc) the sole god. First monotheistic state religion in recorded history. Reversed after his death.',civ:'egypt',node:'',tag:'egypt'},
+  {date:'c. 1,279 BCE',title:'Ramesses II &mdash; The Great',body:'The most celebrated pharaoh. Battle of Kadesh (1274 BCE) — world\'s earliest documented military battle with a named general. First peace treaty in history (Egyptian-Hittite, 1259 BCE).',civ:'egypt',node:'major',tag:'egypt'},
+  {date:'c. 1,200 BCE',title:'Bronze Age Collapse',body:'Catastrophic civilizational collapse across the eastern Mediterranean. Mycenaean Greece, Hittite Empire, Ugarit, Cyprus — destroyed within 50 years. Egypt survives but weakened. Cause still debated: drought, Sea Peoples, systems collapse.',civ:'world',node:'major',tag:'world'},
+  {date:'c. 1,100 BCE',title:'Phoenician Alphabet',body:'Levant (modern Lebanon). 22 consonants. The ancestor of the Greek, Arabic, Hebrew, Latin, and all modern Western alphabets. Spread by Phoenician maritime trade across the Mediterranean.',civ:'world',node:'major',tag:'writing'},
+  {date:'c. 1,000 BCE',title:'Zhou Dynasty China',body:'The Zhou Dynasty (1046–256 BCE) is the longest dynasty in Chinese history. Confucius, Laozi, Sun Tzu all live during the Zhou period. The Mandate of Heaven doctrine established.',civ:'china',node:'',tag:'china'},
+  {date:'c. 900 BCE',title:'Neo-Assyrian Empire',body:'Ashurnasirpal II and successors build the first true super-power. Systematic use of terror (mass deportations, public torture) as a weapon of empire. Library of Ashurbanipal — 30,000 clay tablets.',civ:'babylon',node:'',tag:'babylon'},
+  {date:'c. 776 BCE',title:'First Olympic Games',body:'Olympia, Greece. The oldest international athletics competition. Athletic games held in honour of Zeus. A pan-Hellenic truce (ekecheiria) observed during the games.',civ:'greece',node:'',tag:'greece'},
+  {date:'c. 753 BCE',title:'Rome Founded',body:'Traditional founding date. Romulus and Remus. City-state of seven hills on the Tiber. The Roman republic emerges 509 BCE — the model for modern representative government.',civ:'rome',node:'',tag:'rome'},
+  {date:'c. 563 BCE',title:'Siddhartha Gautama Born',body:'Lumbini, Nepal (then part of India). The Buddha. Enlightenment c. 528 BCE under the Bodhi tree at Bodh Gaya. Buddhism spreads across Asia over 2,500 years.',civ:'india',node:'',tag:'india'},
+  {date:'559 BCE',title:'Cyrus the Great &mdash; Achaemenid Persia',body:'Cyrus II unifies Persia and Medes. Conquers Lydia (546) and Babylon (539). Issues the Cyrus Cylinder — the first declaration of human rights. Jews freed from Babylonian captivity.',civ:'persia',node:'major',tag:'persia'},
+  {date:'525 BCE',title:'Persia Conquers Egypt',body:'Cambyses II defeats Psamtik III at the Battle of Pelusium. Egypt becomes a Persian satrapy. The independent pharaonic state ends for the first time in 2,500 years.',civ:'egypt',node:'',tag:'egypt'},
+  {date:'508 BCE',title:'Athenian Democracy',body:'Cleisthenes establishes the world\'s first democratic system in Athens. Citizens vote directly on laws. Excludes women and slaves — but the foundational model for every modern democracy.',civ:'greece',node:'major',tag:'greece'},
+  {date:'490–479 BCE',title:'Greco-Persian Wars',body:'Marathon (490), Thermopylae (480), Salamis (480). Greece defeats the largest empire on Earth. Greek independence preserved. Western philosophy, science, and democracy survive.',civ:'greece',node:'',tag:'war'},
+  {date:'c. 450 BCE',title:'Nok Culture &mdash; Sub-Saharan Africa',body:'Central Nigeria. Sophisticated iron smelting and terracotta sculpture — 1,500 years before the European Iron Age reaches sub-Saharan Africa. Evidence of complex social organisation.',civ:'world',node:'',tag:'world'},
+  {date:'356–323 BCE',title:'Alexander the Great',body:'Macedonian king conquers Persia, Egypt, Central Asia, and northwest India in 13 years. Founds Alexandria, Egypt — which becomes the world\'s greatest centre of learning for 700 years.',civ:'greece',node:'major',tag:'war'},
+  {date:'305 BCE',title:'Ptolemaic Egypt',body:'Ptolemy I takes Egypt after Alexander\'s death. Greek-speaking pharaohs rule for 275 years. The Library of Alexandria founded. Cleopatra VII (51–30 BCE) is the last of this dynasty — the last independent ruler of Egypt.',civ:'egypt',node:'',tag:'egypt'},
+  {date:'264–146 BCE',title:'Punic Wars &mdash; Rome vs Carthage',body:'Three wars for Mediterranean dominance. Hannibal crosses the Alps with 37 elephants (218 BCE). Rome wins, Carthage razed. Rome becomes a Mediterranean superpower.',civ:'rome',node:'',tag:'war'},
+  {date:'221 BCE',title:'China Unified &mdash; Qin Dynasty',body:'Qin Shi Huang unifies seven warring states. First Emperor of China. Standardises weights, measures, currency, and script across the empire. Construction of the Great Wall begins.',civ:'china',node:'major',tag:'china'},
+  {date:'c. 200 BCE',title:'Nazca Lines &mdash; Peru',body:'Geoglyphs etched into the Peruvian desert floor — visible only from the air. Nazca culture (100 BCE–800 CE). Spider, hummingbird, condor, monkey. Purpose still debated.',civ:'precolumbian',node:'',tag:'precolumbian'},
+  {date:'44 BCE',title:'Assassination of Caesar',body:'Julius Caesar stabbed 23 times in the Theatre of Pompey, Rome. The Roman Republic ends. Civil wars lead to Augustus and the Roman Empire. A moment that echoes in every modern democracy.',civ:'rome',node:'',tag:'war'},
+  {date:'30 BCE',title:'Cleopatra VII — Egypt Falls',body:'Death of Cleopatra VII. Egypt becomes a Roman province. 3,000 years of Egyptian civilization ends. The last hieroglyphic inscription dated 394 CE at Philae.',civ:'egypt',node:'major',tag:'egypt'},
+  {date:'c. 1 CE',title:'Roman Empire at Height',body:'Augustus Caesar. Population ~70 million. Roads, aqueducts, concrete, law. Rome feeds a million people — the first mega-city. Latin becomes the language of Europe for 1,500 years.',civ:'rome',node:'',tag:'rome'},
+  {date:'c. 100 CE',title:'Teotihuacan &mdash; Mexico',body:'The largest city in the pre-Columbian Americas. Population ~125,000–200,000 at peak. Pyramid of the Sun: third largest pyramid on Earth. Ethnicity of builders still unknown.',civ:'precolumbian',node:'',tag:'precolumbian'},
+  {date:'330 CE',title:'Constantinople Founded',body:'Constantine moves the Roman capital east. Constantinople (modern Istanbul) becomes the new Rome. The Byzantine Empire continues Eastern Roman rule for 1,123 years, until 1453.',civ:'rome',node:'',tag:'rome'},
+  {date:'476 CE',title:'Fall of Western Rome',body:'Odoacer deposes Romulus Augustulus. The Western Roman Empire ends. The Dark Ages begin in Europe. The Eastern Empire (Byzantine) continues for another millennium.',civ:'rome',node:'major',tag:'world'},
+];
+
+// ===================== CIVILIZATIONS DATA =====================
+const CIVS=[
+  {glyph:'𓂀',name:'ANCIENT EGYPT',period:'c. 3100 BCE – 30 BCE',region:'NILE VALLEY, NORTH AFRICA',
+   desc:'The longest continuous civilization in human history — 3,000 unbroken years. No empire before or since has matched its duration. They invented a writing system, built in stone with astronomical precision, and developed the world\'s first systematic theology.',
+   facts:['Language: Ancient Egyptian (Afroasiatic family). Hieroglyphic writing from c. 3,100 BCE.','30 dynasties · 3 Kingdoms · 2 Intermediate Periods · 1 Ptolemaic Period.','Pyramids: 118+ confirmed — from Saqqara (2,650 BCE) to Mero&#235; (300 BCE).','The Egyptians called their land Kemet (the Black Land) after the rich Nile silt.','Religion: polytheistic — 2,000–3,000 deities. Ra, Osiris, Isis, Horus, Thoth, Anubis.','Medicine: Edwin Smith Papyrus (1,600 BCE) — first scientific document in history.']},
+  {glyph:'𒀭',name:'SUMER',period:'c. 4500 – 1900 BCE',region:'SOUTHERN MESOPOTAMIA (IRAQ)',
+   desc:'The cradle of civilization. Sumerians invented writing, the wheel, the first cities, the first law codes, and the first mathematics. Everything that follows traces back to the mud-brick cities of southern Iraq.',
+   facts:['Language: Sumerian — language isolate, unrelated to any other known language.','Major cities: Uruk · Ur · Nippur · Lagash · Eridu · Kish · Umma · Girsu.','Cuneiform: 700+ known signs. Used for 3,000 years — from grain receipts to epic poetry.','The first number system: base-60 (sexagesimal) — still used for time and angles.','Religion: polytheistic — Anu (sky), Enlil (wind), Enki (water/wisdom), Inanna (love/war).','Eridu: the oldest city on Earth, founded c. 5,400 BCE.']},
+  {glyph:'𒆳',name:'AKKADIAN EMPIRE',period:'c. 2334 – 2154 BCE',region:'MESOPOTAMIA (IRAQ)',
+   desc:'The world\'s first empire. Sargon of Akkad conquered all Sumerian city-states and unified Mesopotamia under a single ruler. Akkadian became the lingua franca of the ancient Near East for 2,000 years.',
+   facts:['Founder: Sargon of Akkad (reigned c. 2334–2279 BCE) — first empire-builder in history.','Akkadian language: Semitic. Used as the diplomatic language of the Near East until 500 BCE.','At peak: controlled from the Persian Gulf to the Mediterranean.','Collapsed c. 2154 BCE — possibly due to drought lasting ~100 years (Akkadian Drought Event).','The first postal system: royal messengers on defined routes across the empire.','Naram-Sin, Sargon\'s grandson, first king to claim divine status.']},
+  {glyph:'𒀭𒂗𒍪',name:'BABYLON',period:'c. 1900 – 539 BCE',region:'MESOPOTAMIA (IRAQ)',
+   desc:'Babylon — from the Akkadian "Bab-Ilu" (Gate of God) — became the greatest city of the ancient world. The Old Babylonian period gave us Hammurabi and his law code; the New Babylonian period gave us the hanging gardens and the destruction of Jerusalem.',
+   facts:['Hammurabi (1792–1750 BCE): first comprehensive legal code — 282 laws on a black diorite stele.','The Code distinguishes three classes: free persons, freed persons, slaves.','New Babylonian Empire (626–539 BCE): Nebuchadnezzar II destroys Jerusalem (586 BCE).','The Hanging Gardens of Babylon: one of the Seven Wonders. Location still debated.','Babylon falls to Cyrus the Great of Persia in 539 BCE without a battle.','Babylon remained the largest city on Earth c. 1770–1670 BCE and again c. 612–320 BCE.']},
+  {glyph:'𐎠',name:'ACHAEMENID PERSIA',period:'c. 550 – 330 BCE',region:'IRAN / NEAR EAST',
+   desc:'The largest empire the world had yet seen. At its peak under Darius I, the Achaemenid Persian Empire controlled 5.5 million km&#178; — 44% of the world\'s population. Its administrative model influenced Alexander, Rome, and the Islamic Caliphates.',
+   facts:['Founded by Cyrus the Great, who issued the Cyrus Cylinder — first human rights declaration.','Under Darius I (522–486 BCE): 20 satrapies, Royal Road from Susa to Sardis (2,700 km).','Royal Road message relay: 2,700 km in 7 days on horseback. The first postal network.','Persepolis: built by Darius I and Xerxes I. Burned by Alexander 330 BCE.','Religion: Zoroastrianism — the world\'s first monotheistic state religion.','Defeated by Alexander the Great at Gaugamela, 331 BCE.']},
+  {glyph:'Φ',name:'CLASSICAL GREECE',period:'c. 800 – 323 BCE',region:'AEGEAN / MEDITERRANEAN',
+   desc:'The intellectual foundation of Western civilization. Democracy, philosophy, drama, geometry, medicine, and the concept of the citizen all emerge from Greek city-states during a 500-year period of explosive creativity.',
+   facts:['Athens (population c. 300,000 at peak): birthplace of democracy (Cleisthenes, 508 BCE).','Philosophy: Socrates · Plato · Aristotle. Science: Pythagoras · Euclid · Archimedes · Hippocrates.','The Parthenon (447–432 BCE): 17,000 tonnes of marble, no mortar, no straight lines.','Greek alphabet: derived from Phoenician. 24 letters. First alphabet with vowels.','Alexander the Great (356–323 BCE) spreads Greek culture from Egypt to India.','Olympic Games (first recorded 776 BCE) held every 4 years at Olympia.']},
+  {glyph:'SPQR',name:'ROME',period:'753 BCE – 476 CE',region:'ITALY / MEDITERRANEAN',
+   desc:'The longest-lasting empire in the Western world. Roman law, the Latin language, Christianity, concrete, aqueducts, roads, and the concept of the republic all passed through Rome into the modern world.',
+   facts:['The Roman Republic (509–27 BCE): Senate, consuls, tribunes — model for modern democracy.','Roman Empire (27 BCE–476 CE): at peak, 70 million people, 5 million km&#178;, 78 provinces.','Roman roads: 400,000 km total network. 29 military roads from Rome. \'All roads lead to Rome.\'','Roman concrete (pozzolana): stronger than modern concrete — still intact in harbours.','Latin: ancestor of French, Spanish, Portuguese, Italian, Romanian — 800M+ speakers today.','The Roman Empire\'s fall is debated — it arguably became the Byzantine Empire, which lasted until 1453.']},
+  {glyph:'龍',name:'ANCIENT CHINA',period:'c. 2100 BCE – 220 CE',region:'YELLOW RIVER / YANGTZE',
+   desc:'China developed independently from the Near East, producing its own writing system, philosophy, bureaucracy, and technological innovations. Four great inventions — paper, printing, gunpowder, compass — all originate in China.',
+   facts:['Xia (c. 2100–1600 BCE) · Shang (1600–1046 BCE) · Zhou (1046–256 BCE) · Qin · Han.','Oracle bones: Shang dynasty divination inscriptions — earliest known Chinese writing, c. 1250 BCE.','Qin Shi Huang (221 BCE): unifies China, standardises script, weights, measures. Terracotta Army.','Han Dynasty (206 BCE–220 CE): Silk Road trade. Paper invented (c. 100 BCE).','Confucius (551–479 BCE): ethics of social relationships — foundation of East Asian civilisation.','The Great Wall: began under Qin (221 BCE), extended through Ming. Total length 21,196 km.']},
+  {glyph:'🕉',name:'INDUS VALLEY',period:'c. 3300 – 1300 BCE',region:'PAKISTAN / NW INDIA',
+   desc:'One of the world\'s three earliest urban civilizations, alongside Egypt and Sumer. Mohenjo-daro and Harappa were engineering marvels with standardised bricks, advanced drainage, and a yet-undeciphered script.',
+   facts:['At peak (c. 2600–1900 BCE): 5 million people across 2,500 sites — the largest ancient civilization by population.','Mohenjo-daro: grid-pattern streets, 10,000+ residents, public baths, 2-story houses with indoor plumbing.','The Indus script: ~400 signs. Undeciphered. Not related to any known writing system.','No evidence of palaces, armies, or monarchs — possibly a trade-based republic.','Collapse c. 1900–1300 BCE: climate change, Saraswati river drying, migration east and south.','Standard bricks: ratio 1:2:4 across all sites, from Baluchistan to Gujarat — 1,500 km apart.']},
+];
+
+// ===================== EGYPT FACTS =====================
+const EGYPT_FACTS=[
+  {glyph:'𓃭',title:'THE NILE',body:'The Nile floods annually, depositing black silt (kemet) on both banks. This predictable agriculture — not the desert — made Egypt possible. Ancient Egypt was essentially a 10-km strip of farmland along a 6,650-km river.',facts:['Floods: June–September. Predicted with nilometers.','Two lands: Upper Egypt (south) + Lower Egypt (north/delta).','Inundation, Emergence, and Harvest — three Egyptian seasons.','The Nile flows north. Upper Egypt is geographically higher.']},
+  {glyph:'𓇳',title:'THE PYRAMIDS',body:'118+ confirmed pyramids. Built over 1,000 years. Not built by slaves — evidence shows a paid, organised workforce of 20,000–30,000 workers. They ate beef, fish, and bread. They had doctors.',facts:['Step Pyramid, Saqqara (c. 2650 BCE): first pyramid. Architect: Imhotep.','Great Pyramid, Giza (c. 2560 BCE): 2.3M stones. Tallest structure for 3,800 years.','Bent Pyramid and Red Pyramid: Sneferu\'s learning curve in pyramid design.','Last pyramid built: Nectanebo II (c. 341 BCE). 3,000-year pyramid tradition.']},
+  {glyph:'𓁹',title:'RELIGION',body:'~2,000–3,000 deities over 3,000 years. Religion was not separate from governance — the pharaoh was a god (or son of a god). Death was not an end but a threshold.',facts:['Ra: sun god. The supreme deity for most of Egyptian history.','Osiris: god of the dead and resurrection. Judged souls in the Hall of Ma\'at.','Isis: goddess of magic and motherhood. Most widely worshipped deity in the ancient world.','The Book of the Dead: not a single text — 192 spells, chosen per individual.']},
+  {glyph:'𓆎',title:'MUMMIFICATION',body:'The Egyptians believed the soul (ka) returned to the body. Preservation was resurrection insurance. The process evolved over 3,000 years from simple desiccation to 70-day chemically sophisticated embalming.',facts:['70-day process: brain removed via nostril. Organs in canopic jars.','Natron salt used to desiccate the body over 40 days.','Over 70 million animals mummified — cats, ibises, crocodiles, bulls.','The oldest mummy: Gebelein Man, c. 3400 BCE — naturally preserved by the desert.']},
+];
+
+// ===================== PHARAOHS =====================
+const PHARAOHS=[
+  {dynasty:'OLD KINGDOM · 3RD DYNASTY',name:'DJOSER',reign:'c. 2667–2648 BCE',desc:'Commissioned the Step Pyramid at Saqqara — the world\'s first monumental stone structure. His architect Imhotep became the first named architect and scientist in recorded history.'},
+  {dynasty:'OLD KINGDOM · 4TH DYNASTY',name:'KHUFU (CHEOPS)',reign:'c. 2589–2566 BCE',desc:'Builder of the Great Pyramid of Giza. The largest stone building ever constructed. 2.3 million blocks. Precision to within 5 cm over 230 metres. We know almost nothing else about him.'},
+  {dynasty:'OLD KINGDOM · 4TH DYNASTY',name:'KHAFRE',reign:'c. 2558–2532 BCE',desc:'Son of Khufu. Built the second Giza pyramid and almost certainly commissioned the Great Sphinx — the oldest monumental sculpture in Egypt, carved from a single limestone outcrop.'},
+  {dynasty:'NEW KINGDOM · 18TH DYNASTY',name:'THUTMOSE III',reign:'c. 1479–1425 BCE',desc:'The Napoleon of Egypt. Conducted 17 military campaigns, expanding Egypt from Sudan to the Euphrates. Won the Battle of Megiddo (1457 BCE) — the first battle in history recorded in detail.'},
+  {dynasty:'NEW KINGDOM · 18TH DYNASTY',name:'AKHENATEN',reign:'c. 1353–1336 BCE',desc:'The Heretic Pharaoh. Banned all gods but Aten (the sun disc). First state monotheism in recorded history. Built a new capital Akhetaten (Amarna). All his reforms were reversed after his death.'},
+  {dynasty:'NEW KINGDOM · 18TH DYNASTY',name:'TUTANKHAMUN',reign:'c. 1332–1323 BCE',desc:'Died at ~18 years old. Restorer of the old gods after Akhenaten. Famous only because his tomb (KV62) was found intact by Howard Carter in 1922 — the most important archaeological discovery of the 20th century.'},
+  {dynasty:'NEW KINGDOM · 19TH DYNASTY',name:'RAMESSES II',reign:'c. 1279–1213 BCE',desc:'Reigned 66 years. Battle of Kadesh (1274 BCE) — largest chariot battle in history. Signed history\'s first peace treaty with the Hittites (1259 BCE). Built Abu Simbel, the Ramesseum, Pi-Ramesse. Had 100+ children.'},
+  {dynasty:'PTOLEMAIC PERIOD · 51–30 BCE',name:'CLEOPATRA VII',reign:'51–30 BCE',desc:'The last ruler of an independent Egypt. Fluent in 9 languages — the only Ptolemaic ruler who spoke Egyptian. Ally of Julius Caesar and Marc Antony. Died 30 BCE, age 39. Egypt became a Roman province.'},
+];
+
+// ===================== SUMER CARDS =====================
+const SUMER_CARDS=[
+  {label:'INVENTION · c. 3200 BCE',title:'CUNEIFORM — THE FIRST WRITING',body:'Pressed into wet clay with a reed stylus. Began as pictograms (a bull = a bull). Became abstract wedge marks (cuneiform = \'wedge-shaped\') within 500 years. Used for 3,000 years in 15+ languages from Sumerian to Persian.'},
+  {label:'TECHNOLOGY · c. 3500 BCE',title:'THE WHEEL',body:'The Sumerian wheel appears first in ceramics (potter\'s wheel, c. 3500 BCE), then in transport (wheeled cart, c. 3200 BCE). The oldest wheel-and-axle artifact: Bronocice, Poland, c. 3500 BCE. Possibly parallel invention.'},
+  {label:'LITERATURE · c. 2100 BCE',title:'EPIC OF GILGAMESH',body:'12 clay tablets. Gilgamesh, King of Uruk, 2/3 god, 1/3 man, seeks immortality after his best friend Enkidu dies. Fails. Returns home. Realises Uruk itself is his legacy. The flood narrative (Tablet XI) is 1,000 years older than Genesis.'},
+  {label:'LAW · c. 2100 BCE',title:'CODE OF UR-NAMMU',body:'The world\'s oldest surviving law code — predates Hammurabi by 300 years. Written in Sumerian. Includes fines in silver for injury, freedom for slaves unjustly enslaved. Signed by Ur-Nammu, founder of the Third Dynasty of Ur.'},
+  {label:'MATHEMATICS · c. 3000 BCE',title:'THE SEXAGESIMAL SYSTEM',body:'Base-60. The Sumerians chose 60 because it is divisible by 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, and 30. We still use it: 60 seconds in a minute, 60 minutes in an hour, 360 degrees in a circle.'},
+  {label:'ASTRONOMY · c. 2000 BCE',title:'MESOPOTAMIAN ASTRONOMY',body:'The Babylonians documented the movements of Venus from c. 1700 BCE (Venus Tablet of Ammisaduqa). They predicted lunar eclipses with high accuracy. The zodiac — 12 constellations in a band — is a Babylonian invention, c. 500 BCE.'},
+];
+
+// ===================== MESOPOTAMIA SUCCESSION =====================
+const MESOPOTAMIA=[
+  {label:'EMPIRE · c. 2334–2154 BCE',title:'AKKADIAN EMPIRE',body:'First empire in history. Sargon of Akkad conquers all Sumer. Akkadian language replaces Sumerian as the spoken tongue, though Sumerian remains sacred (as Latin did in medieval Europe).'},
+  {label:'EMPIRE · c. 2112–2004 BCE',title:'UR III (THIRD DYNASTY OF UR)',body:'The last great Sumerian revival. Ur-Nammu and Shulgi build ziggurats, codify law, and run a vast state bureaucracy with over 100,000 clay tablet records. Sumerian spoken language dies here.'},
+  {label:'EMPIRE · c. 1900–1595 BCE',title:'OLD BABYLONIAN PERIOD',body:'Hammurabi unifies Mesopotamia. Code of Hammurabi (282 laws). Babylon becomes the world\'s largest city. Old Babylonian mathematics: solving quadratic equations, approximating square roots, π ≈ 3.125.'},
+  {label:'EMPIRE · c. 911–609 BCE',title:'NEO-ASSYRIAN EMPIRE',body:'The first true military superpower. Ashurnasirpal II, Sargon II, Sennacherib, Ashurbanipal. Standing army. Siege warfare. Deportation of populations as policy. Library of Ashurbanipal: 30,000+ clay tablets.'},
+  {label:'EMPIRE · c. 626–539 BCE',title:'NEO-BABYLONIAN (CHALDEAN) EMPIRE',body:'Nebuchadnezzar II (605–562 BCE) destroys Jerusalem (586 BCE), builds the Ishtar Gate, possibly the Hanging Gardens. Babylon: largest city on Earth (~200,000–500,000 people). Falls to Persia without a battle, 539 BCE.'},
+];
+
+// ===================== WORLD REGIONS =====================
+const WORLD_REGIONS=[
+  {cls:'wc-india',label:'SOUTH ASIA',name:'INDIA',body:'Indus Valley Civilization (c. 3300–1300 BCE): largest ancient civilization by geography. Vedic period (1500–500 BCE): Sanskrit, the Rigveda. Buddhism (528 BCE). Maurya Empire under Ashoka (268–232 BCE) — the Buddhist emperor.'},
+  {cls:'wc-china',label:'EAST ASIA',name:'CHINA',body:'Yellow River civilization from c. 2000 BCE. Four dynasties before the Qin unification: Xia, Shang, Zhou. Four great inventions: paper (105 CE), printing (600s CE), gunpowder (850s CE), compass (1040s CE). World\'s oldest continuous civilisation still extant.'},
+  {cls:'wc-americas',label:'MESOAMERICA',name:'THE AMERICAS',body:'Olmec (c. 1500–400 BCE): \'mother culture\' of Mesoamerica. Giant stone heads. Maya begin c. 2000 BCE: writing, zero, 365-day calendar. Teotihuacan (100–650 CE): 125,000+ people. Norte Chico/Caral: Peru, c. 3000 BCE — oldest civilization in the Americas.'},
+  {cls:'wc-africa',label:'SUB-SAHARAN AFRICA',name:'AFRICA',body:'Nubia/Kush (c. 2500 BCE): iron technology, independent pyramid-building tradition (Mero&#235; pyramids). Nok culture (Nigeria, c. 900 BCE): iron smelting. Great Zimbabwe (c. 1100–1450 CE): massive stone enclosures. Benin Kingdom: bronze casting tradition from c. 900 CE.'},
+  {cls:'wc-europe',label:'NORTHERN EUROPE',name:'EUROPE',body:'Stonehenge (c. 3000–1500 BCE): megalithic alignment to solstices. Bronze Age across Europe c. 3000–1200 BCE. Iron Age from c. 1200 BCE. Celtic cultures spread across Central Europe from c. 800 BCE. Viking expansion begins c. 793 CE.'},
+  {cls:'wc-oceania',label:'PACIFIC',name:'OCEANIA',body:'Aboriginal Australians: oldest continuous culture on Earth — 65,000+ years. Polynesian expansion: Tonga (c. 1000 BCE), Samoa, Hawaii (c. 300 CE), New Zealand (c. 1250–1300 CE). Easter Island (Rapa Nui): settled c. 300–400 CE. Moai statues built c. 1250–1500 CE.'},
+];
+
+// ===================== DISCOVERIES TABLE =====================
+const DISCOVERIES=[
+  {date:'c. 3500 BCE',civ:'SUMER',name:'The Wheel',sig:'Transforms transport, pottery, and mechanical power across Eurasia'},
+  {date:'c. 3200 BCE',civ:'SUMER',name:'Writing (Cuneiform)',sig:'First encoding of language. Law, literature, and history become possible.'},
+  {date:'c. 3100 BCE',civ:'EGYPT',name:'Hieroglyphic Writing',sig:'Independent invention. Longest-running writing system: 3,500 years of use.'},
+  {date:'c. 3000 BCE',civ:'SUMER',name:'Base-60 Mathematics',sig:'60 seconds, 60 minutes, 360 degrees — the Sumerian legacy in every clock and compass.'},
+  {date:'c. 2650 BCE',civ:'EGYPT',name:'Monumental Stone Architecture',sig:'The Step Pyramid. Humans learn to build in stone at civilizational scale.'},
+  {date:'c. 2560 BCE',civ:'EGYPT',name:'Precision Surveying',sig:'Great Pyramid aligned north within 0.05 degrees. No GPS. No modern instruments.'},
+  {date:'c. 2100 BCE',civ:'SUMER',name:'Formal Law Code',sig:'Code of Ur-Nammu: codified rights, punishments, and social contracts.'},
+  {date:'c. 1792 BCE',civ:'BABYLON',name:'Comprehensive Legal Code',sig:'Hammurabi\'s 282 laws inscribed in stone — the foundation of rule-of-law civilization.'},
+  {date:'c. 1700 BCE',civ:'BABYLON',name:'Astronomical Prediction',sig:'Venus Tablet of Ammisaduqa — mathematical prediction of planetary motion.'},
+  {date:'c. 1600 BCE',civ:'EGYPT',name:'Medical Papyri',sig:'Edwin Smith Papyrus: 48 clinical cases. First empirical (not magical) medicine.'},
+  {date:'c. 1100 BCE',civ:'PHOENICIA',name:'Consonantal Alphabet',sig:'22 letters. Ancestor of Greek, Latin, Arabic, Hebrew, and all modern Western scripts.'},
+  {date:'c. 600 BCE',civ:'BABYLON',name:'Map of the World',sig:'Babylonian World Map — oldest known map. Clay tablet showing Babylon at centre, ocean surrounding all.'},
+  {date:'508 BCE',civ:'GREECE',name:'Democracy',sig:'Cleisthenes\' Athenian democracy — template for every modern representative government.'},
+  {date:'c. 300 BCE',civ:'GREECE',name:'Deductive Geometry',sig:'Euclid\'s Elements — 465 propositions built from 5 axioms. Still taught. Unchanged.'},
+  {date:'c. 250 BCE',civ:'GREECE',name:'Earth\'s Circumference Measured',sig:'Eratosthenes calculates Earth\'s circumference within 1% accuracy using shadow angles.'},
+  {date:'c. 100 BCE',civ:'CHINA',name:'Paper',sig:'Cai Lun (105 CE formal record). Revolutionises information storage and transmission.'},
+  {date:'c. 59 BCE',civ:'ROME',name:'Newspaper (Acta Diurna)',sig:'Julius Caesar orders daily public notices posted in Rome — the first newspaper.'},
+  {date:'c. 100 CE',civ:'ROME',name:'Concrete (Opus Caementicium)',sig:'Roman pozzolanic concrete. Durable for 2,000 years. Marine structures still intact today.'},
+];
+
+// ===================== BUILD TIMELINE =====================
+function buildTimeline(){
+  var wrap=document.getElementById('timelineWrap');
+  if(!wrap)return;
+
+  var eras=[
+    {before:'c. 3,500 BCE',label:'PRE-CIVILIZATION'},
+    {before:'c. 3,200 BCE',label:'WRITING & EARLY CITIES'},
+    {before:'c. 2,334 BCE',label:'EMPIRES BEGIN'},
+    {before:'c. 2,000 BCE',label:'BRONZE AGE PEAK'},
+    {before:'c. 1,200 BCE',label:'IRON AGE & COLLAPSE'},
+    {before:'559 BCE',label:'CLASSICAL AGE'},
+    {before:'44 BCE',label:'LATE ANTIQUITY'},
+    {before:'476 CE',label:'END OF ANCIENT WORLD'},
+  ];
+
+  var eraIdx=0;
+  TIMELINE.forEach(function(item,i){
+    if(eraIdx<eras.length && i>0 && TIMELINE[i].date===eras[eraIdx].before){
+      var em=document.createElement('div');em.className='era-marker';
+      em.innerHTML='<div class="era-pill">'+eras[eraIdx].label+'</div>';
+      wrap.appendChild(em);eraIdx++;
+    }
+    var side=i%2===0?'left':'right';
+    var div=document.createElement('div');
+    div.className='titem '+side;
+    var nodeClass='titem-node'+(item.node==='major'?' major':'')+(item.civ?' civ-'+item.civ:'');
+    var tagClass=item.tag?'tcard-tag tag-'+item.tag:'';
+    var tagLabel=item.tag?item.tag.toUpperCase():'';
+    var cardHTML='<div class="titem-card"><div class="tcard"><div class="tcard-date">'+item.date+'</div><div class="tcard-title">'+item.title+'</div><div class="tcard-body">'+item.body+'</div>'+(tagClass?'<div class="'+tagClass+'">'+tagLabel+'</div>':'')+'</div></div>';
+    var nodeHTML='<div class="titem-node-wrap"><div class="'+nodeClass+'"></div></div>';
+    var spacer='<div class="titem-spacer"></div>';
+    div.innerHTML=cardHTML+nodeHTML+spacer;
+    wrap.appendChild(div);
+  });
+}
+
+// ===================== BUILD CIVS =====================
+function buildCivs(){
+  var grid=document.getElementById('civGrid');if(!grid)return;
+  CIVS.forEach(function(c){
+    var div=document.createElement('div');div.className='civ-card';
+    div.innerHTML='<div class="civ-card-head"><div class="civ-glyph">'+c.glyph+'</div><div class="civ-meta"><div class="civ-period">'+c.period+'</div><div class="civ-region">'+c.region+'</div></div></div><div class="civ-name">'+c.name+'</div><div class="civ-desc">'+c.desc+'</div><div class="civ-facts">'+c.facts.map(function(f){return'<div class="civ-fact">'+f+'</div>';}).join('')+'</div>';
+    grid.appendChild(div);
+  });
+}
+
+// ===================== BUILD EGYPT =====================
+function buildEgypt(){
+  var grid=document.getElementById('egyptFacts');if(!grid)return;
+  EGYPT_FACTS.forEach(function(e){
+    var div=document.createElement('div');div.className='civ-card';
+    div.innerHTML='<div class="civ-card-head"><div class="civ-glyph">'+e.glyph+'</div></div><div class="civ-name">'+e.title+'</div><div class="civ-desc">'+e.body+'</div><div class="civ-facts">'+e.facts.map(function(f){return'<div class="civ-fact">'+f+'</div>';}).join('')+'</div>';
+    grid.appendChild(div);
+  });
+  var pg=document.getElementById('pharaohGrid');if(!pg)return;
+  PHARAOHS.forEach(function(p){
+    var div=document.createElement('div');div.className='pharaoh-card';
+    div.innerHTML='<div class="pharaoh-dynasty">'+p.dynasty+'</div><div class="pharaoh-name">'+p.name+'</div><div class="pharaoh-reign">'+p.reign+'</div><div class="pharaoh-desc">'+p.desc+'</div>';
+    pg.appendChild(div);
+  });
+}
+
+// ===================== BUILD SUMER =====================
+function buildSumer(){
+  var sg=document.getElementById('sumerGrid');if(!sg)return;
+  SUMER_CARDS.forEach(function(s){
+    var div=document.createElement('div');div.className='tablet-card';
+    div.innerHTML='<div class="tablet-label">'+s.label+'</div><div class="tablet-title">'+s.title+'</div><div class="tablet-body">'+s.body+'</div>';
+    sg.appendChild(div);
+  });
+  var mg=document.getElementById('mesopotamiaGrid');if(!mg)return;
+  MESOPOTAMIA.forEach(function(m){
+    var div=document.createElement('div');div.className='tablet-card';
+    div.innerHTML='<div class="tablet-label">'+m.label+'</div><div class="tablet-title">'+m.title+'</div><div class="tablet-body">'+m.body+'</div>';
+    mg.appendChild(div);
+  });
+}
+
+// ===================== BUILD WORLD =====================
+function buildWorld(){
+  var wg=document.getElementById('worldGrid');if(!wg)return;
+  WORLD_REGIONS.forEach(function(w){
+    var div=document.createElement('div');div.className='world-card '+w.cls;
+    div.innerHTML='<div class="world-label">'+w.label+'</div><div class="world-name">'+w.name+'</div><div class="world-body">'+w.body+'</div>';
+    wg.appendChild(div);
+  });
+}
+
+// ===================== BUILD DISCOVERIES =====================
+function buildDiscoveries(){
+  var tb=document.getElementById('discBody');if(!tb)return;
+  DISCOVERIES.forEach(function(d){
+    var tr=document.createElement('tr');
+    tr.innerHTML='<td class="disc-date">'+d.date+'</td><td class="disc-civ">'+d.civ+'</td><td class="disc-name">'+d.name+'</td><td>'+d.sig+'</td>';
+    tb.appendChild(tr);
+  });
+}
+
+// ===================== HERO CANVAS — PARTICLE SAND =====================
+(function(){
+  var c=document.getElementById('hero-canvas');if(!c)return;
+  var x=c.getContext('2d');
+  function resize(){c.width=window.innerWidth;c.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize);
+  var pts=[];
+  for(var i=0;i<120;i++){pts.push({x:Math.random()*c.width,y:Math.random()*c.height,vx:(Math.random()-.5)*.12,vy:(Math.random()-.5)*.08,r:.8+Math.random()*2,a:Math.random()*.4+.05,hue:Math.random()<.5?36:24});}
+  function draw(){
+    x.clearRect(0,0,c.width,c.height);
+    pts.forEach(function(p){
+      p.x+=p.vx;p.y+=p.vy;
+      if(p.x<0)p.x=c.width;if(p.x>c.width)p.x=0;
+      if(p.y<0)p.y=c.height;if(p.y>c.height)p.y=0;
+      x.fillStyle='hsla('+p.hue+',80%,65%,'+p.a+')';
+      x.beginPath();x.arc(p.x,p.y,p.r,0,Math.PI*2);x.fill();
+    });
+    // faint grid lines (papyrus grid)
+    x.strokeStyle='rgba(201,149,42,.025)';x.lineWidth=1;
+    for(var gx2=0;gx2<c.width;gx2+=80){x.beginPath();x.moveTo(gx2,0);x.lineTo(gx2,c.height);x.stroke();}
+    for(var gy=0;gy<c.height;gy+=80){x.beginPath();x.moveTo(0,gy);x.lineTo(c.width,gy);x.stroke();}
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// ===================== NAV ACTIVE =====================
+function setActive(el){
+  document.querySelectorAll('.nav-links a').forEach(function(a){a.classList.remove('active');});
+  el.classList.add('active');
+}
+
+// ===================== INIT =====================
+document.addEventListener('DOMContentLoaded',function(){
+  buildTimeline();
+  buildCivs();
+  buildEgypt();
+  buildSumer();
+  buildWorld();
+  buildDiscoveries();
+  buildHieroAlphabet();
+  buildHieroBiliteral();
+  buildHieroDet();
+  buildCartouche();
+  buildCuneiEvolution();
+  buildCuneiTable();
+  buildCuneiLangs();
+  buildLineage();
+  buildIndepScripts();
+});
+
+// ===================== WRITING TAB SWITCHER =====================
+function wTab(id,btn){
+  ['hiero','cunei','lineage'].forEach(function(k){
+    var el=document.getElementById('wpanel-'+k);
+    var b=document.getElementById('wtab-'+k);
+    if(el)el.style.display=k===id?'block':'none';
+    if(b){b.classList.remove('active');if(k===id)b.classList.add('active');}
+  });
+}
+
+// ===================== HIEROGLYPH UNILITERAL ALPHABET =====================
+var HIERO_ALPHA=[
+  {g:'\u{13000}',t:'3',name:'Egyptian Vulture',read:'aleph \u2014 glottal stop'},
+  {g:'\u{13011}',t:'i',name:'Reed',read:'i \u2014 yod sound'},
+  {g:'\u{13041}',t:'w',name:'Quail Chick',read:'w \u2014 u/w sound'},
+  {g:'\u{13046}',t:'b',name:'Foot / Leg',read:'b \u2014 bilabial plosive'},
+  {g:'\u{1305B}',t:'p',name:'Stool / Mat',read:'p \u2014 bilabial plosive'},
+  {g:'\u{1306C}',t:'f',name:'Horned Viper',read:'f \u2014 labiodental'},
+  {g:'\u{13071}',t:'m',name:'Owl',read:'m \u2014 bilabial nasal'},
+  {g:'\u{1307B}',t:'n',name:'Water / Ripple',read:'n \u2014 alveolar nasal'},
+  {g:'\u{1307C}',t:'r',name:'Mouth',read:'r \u2014 liquid consonant'},
+  {g:'\u{13085}',t:'h',name:'Reed Shelter',read:'h \u2014 plain h'},
+  {g:'\u{13091}',t:'H',name:'Twisted Wick',read:'H \u2014 emphatic h'},
+  {g:'\u{13095}',t:'x',name:'Placenta / Sieve',read:'kh \u2014 like Scottish loch'},
+  {g:'\u{13096}',t:'X',name:'Animal Belly',read:'kh \u2014 velar / uvular'},
+  {g:'\u{130AC}',t:'z',name:'Door Bolt',read:'z \u2014 alveolar sibilant'},
+  {g:'\u{130B0}',t:'s',name:'Folded Cloth',read:'s \u2014 alveolar sibilant'},
+  {g:'\u{130D0}',t:'S',name:'Pool / Lake',read:'sh \u2014 palatal sibilant'},
+  {g:'\u{130DC}',t:'q',name:'Slope / Hill',read:'q \u2014 emphatic k'},
+  {g:'\u{130E0}',t:'k',name:'Basket with Handle',read:'k \u2014 velar plosive'},
+  {g:'\u{130F6}',t:'g',name:'Jar Stand',read:'g \u2014 velar plosive'},
+  {g:'\u{1310C}',t:'t',name:'Bread Loaf',read:'t \u2014 alveolar plosive'},
+  {g:'\u{13117}',t:'T',name:'Tethering Ring',read:'tj \u2014 palatal affricate'},
+  {g:'\u{13121}',t:'d',name:'Hand',read:'d \u2014 alveolar plosive'},
+  {g:'\u{13129}',t:'D',name:'Cobra / Serpent',read:'dj \u2014 palatal affricate'},
+];
+
+function buildHieroAlphabet(){
+  var el=document.getElementById('hieroAlphabet');if(!el)return;
+  HIERO_ALPHA.forEach(function(h){
+    var d=document.createElement('div');d.className='ha-cell';
+    d.innerHTML='<div class="ha-glyph">'+h.g+'</div>'
+      +'<div class="ha-trans">'+h.t+'</div>'
+      +'<div class="ha-name">'+h.name+'</div>'
+      +'<div class="ha-read">'+h.read+'</div>';
+    el.appendChild(d);
+  });
+}
+
+// ===================== BILITERAL SIGNS =====================
+var HIERO_BILI=[
+  {g:'\u{1303A}',read:'ib',name:'Heart',meaning:'heart, desire'},
+  {g:'\u{13055}',read:'nb',name:'Basket',meaning:'lord, all, every'},
+  {g:'\u{130A0}',read:'nfr',name:'Heart & Trachea',meaning:'beautiful, good, perfect'},
+  {g:'\u{13068}',read:'mn',name:'Gaming Board',meaning:'to remain, endure'},
+  {g:'\u{1307D}',read:'pr',name:'House Plan',meaning:'house, go out'},
+  {g:'\u{13081}',read:'Hr',name:'Horus Falcon',meaning:'Horus, face, upon'},
+  {g:'\u{130D3}',read:'sA',name:'Son / Goose',meaning:'son, protection'},
+  {g:'\u{130DE}',read:'km',name:'Crocodile Skin',meaning:'black, to complete'},
+  {g:'\u{13104}',read:'wsr',name:'Head of Canid',meaning:'powerful, mighty'},
+  {g:'\u{13109}',read:'tp',name:'Head',meaning:'head, upon, first'},
+  {g:'\u{13163}',read:'rn',name:'Rope',meaning:'name'},
+  {g:'\u{13167}',read:'ra',name:'Sun Disc',meaning:'Ra, sun, day'},
+  {g:'\u{13169}',read:'Htp',name:'Offering Table',meaning:'peace, satisfaction, offering'},
+  {g:'\u{130B3}',read:'ms',name:'Three Fox Skins',meaning:'to give birth'},
+  {g:'\u{130BA}',read:'sw',name:'Flagellum',meaning:'him, he'},
+  {g:'\u{13078}',read:'mi',name:'Owl (modified)',meaning:'like, as'},
+];
+
+function buildHieroBiliteral(){
+  var el=document.getElementById('hieroBiliteral');if(!el)return;
+  HIERO_BILI.forEach(function(h){
+    var d=document.createElement('div');d.className='hb-cell';
+    d.innerHTML='<div class="hb-glyph">'+h.g+'</div>'
+      +'<div class="hb-read">'+h.read+'</div>'
+      +'<div class="hb-name">'+h.name+'</div>'
+      +'<div class="hb-meaning">'+h.meaning+'</div>';
+    el.appendChild(d);
+  });
+}
+
+// ===================== DETERMINATIVES =====================
+var HIERO_DET=[
+  {g:'\u{13000}',cat:'DIVINITY',desc:'Placed after names of gods and divine beings. Seated god sign.'},
+  {g:'\u{13036}',cat:'MAN / MALE',desc:'After words referring to men, their actions, professions.'},
+  {g:'\u{13039}',cat:'WOMAN / FEMALE',desc:'After words for women and female concepts. Seated woman sign.'},
+  {g:'\u{1303A}',cat:'EMOTION / ABSTRACT',desc:'Heart sign \u2014 after words for feeling, intelligence, memory, desire.'},
+  {g:'\u{1307D}',cat:'BUILDING / PLACE',desc:'House plan from above \u2014 after any word for a building or enclosed space.'},
+  {g:'\u{13073}',cat:'BOOK / WRITING',desc:'Papyrus scroll, tied \u2014 after words for writing, books, abstract concepts.'},
+  {g:'\u{13162}',cat:'SUN / TIME / LIGHT',desc:'Sun disc \u2014 after words for time, days, light, brightness, heat.'},
+  {g:'\u{1318C}',cat:'WATER / LIQUID',desc:'Ripple of water \u2014 after any liquid, water action, or body of water.'},
+  {g:'\u{130DB}',cat:'DESERT / FOREIGN LAND',desc:'Hills with sun \u2014 after names of foreign lands, deserts, minerals.'},
+  {g:'\u{1302D}',cat:'TREE / WOOD / PLANT',desc:'Tree sign \u2014 after words for trees, wood, wooden objects, plants.'},
+  {g:'\u{1303D}',cat:'FISH / WATER CREATURE',desc:'Tilapia fish \u2014 after any word for fish or aquatic creatures.'},
+  {g:'\u{13047}',cat:'BIRD / SMALL / BAD',desc:'Sparrow \u2014 after words for small, bad, weak things, or birds.'},
+];
+
+function buildHieroDet(){
+  var el=document.getElementById('hieroDet');if(!el)return;
+  HIERO_DET.forEach(function(h){
+    var d=document.createElement('div');d.className='hd-cell';
+    d.innerHTML='<div class="hd-glyph">'+h.g+'</div>'
+      +'<div class="hd-info">'
+      +'<div class="hd-read">SILENT</div>'
+      +'<div class="hd-cat">'+h.cat+'</div>'
+      +'<div class="hd-desc">'+h.desc+'</div>'
+      +'</div>';
+    el.appendChild(d);
+  });
+}
+
+// ===================== CARTOUCHE EXAMPLES =====================
+var CARTOUCHES=[
+  {name:'RAMESSES II \u2014 Throne Name',
+   glyphs:'\u{13161}\u{1307C}\u{13080}\u{13121}\u{1307C}',
+   read:'User-Maat-Ra Setep-en-Ra \u2014 "Strong in truth is Ra, Chosen of Ra." The throne name given at coronation.'},
+  {name:'TUTANKHAMUN \u2014 Birth Name',
+   glyphs:'\u{1310C}\u{13100}\u{130D3}\u{1202D}\u{1307C}\u{13071}',
+   read:'Tut-ankh-Amun \u2014 "Living image of Amun." His cartouche bore the Aten disc during the Akhenaten period, later changed back to Amun after the restoration.'},
+  {name:'CLEOPATRA VII \u2014 Birth Name (phonetic)',
+   glyphs:'\u{13095}\u{130B0}\u{130E0}\u{13121}\u{1307C}\u{130B0}',
+   read:'Kleopatra \u2014 rendered phonetically: k-l-e-o-p-a-t-r-a mapped to hieroglyphic signs. Her name in the Rosetta Stone cartouche was the key that allowed Champollion to confirm the phonetic principle.'},
+];
+
+function buildCartouche(){
+  var el=document.getElementById('cartoucheEx');if(!el)return;
+  CARTOUCHES.forEach(function(c){
+    var d=document.createElement('div');d.className='cart-item';
+    d.innerHTML='<div class="cart-name">'+c.name+'</div>'
+      +'<div class="cart-glyphs">'+c.glyphs+'</div>'
+      +'<div class="cart-read">'+c.read+'</div>';
+    el.appendChild(d);
+  });
+}
+
+// ===================== CUNEIFORM EVOLUTION =====================
+var CUNEI_EVO=[
+  {era:'c. 3500 BCE',sign:'\u{12218}',name:'PICTOGRAM',desc:'Original pictographic sign. Round shapes, curves. Drawn with a stylus tip.'},
+  {era:'c. 3000 BCE',sign:'\u{12213}',name:'ROTATED',desc:'Signs rotated 90\u00b0. Direction shifts from top-to-bottom to left-to-right.'},
+  {era:'c. 2500 BCE',sign:'\u{1202E}',name:'ABSTRACTED',desc:'Pictorial content lost. Wedge impressions replace curves. Purely conventional.'},
+  {era:'c. 2000 BCE',sign:'\u{12218}',name:'OLD BABYLONIAN',desc:'Signs stabilise into consistent forms across the empire. Writing standardised.'},
+  {era:'c. 600 BCE',sign:'\u{12213}',name:'NEO-BABYLONIAN',desc:'Further simplification. Fewer wedges per sign. Faster to press into clay.'},
+  {era:'c. 500 BCE',sign:'AN',name:'TRANSLITERATION',desc:'Modern scholars render cuneiform in Latin letters. AN = sky / heaven / Anu.'},
+];
+
+function buildCuneiEvolution(){
+  var el=document.getElementById('cuneiEvolution');if(!el)return;
+  CUNEI_EVO.forEach(function(c){
+    var d=document.createElement('div');d.className='ce-step';
+    d.innerHTML='<div class="ce-era">'+c.era+'</div>'
+      +'<div class="ce-sign">'+c.sign+'</div>'
+      +'<div class="ce-name">'+c.name+'</div>'
+      +'<div class="ce-desc">'+c.desc+'</div>';
+    el.appendChild(d);
+  });
+}
+
+// ===================== CUNEIFORM SIGN TABLE =====================
+var CUNEI_SIGNS=[
+  {sign:'\u{12000}',sumer:'A',akk:'m\u00e2mu',meaning:'water, in, from',cat:'nature'},
+  {sign:'\u{1200F}',sumer:'AB',akk:'b\u012btu',meaning:'house, temple',cat:'place'},
+  {sign:'\u{12019}',sumer:'AD',akk:'abu',meaning:'father',cat:'human'},
+  {sign:'\u{1202D}',sumer:'AN / DINGIR',akk:'\u0161am\u00fb / ilu',meaning:'sky, heaven, god (divine determinative)',cat:'god'},
+  {sign:'\u{12038}',sumer:'APIN',akk:'ikkarru',meaning:'plow',cat:'object'},
+  {sign:'\u{1203F}',sumer:'ASH',akk:'\u0161ten',meaning:'one, first',cat:'number'},
+  {sign:'\u{12041}',sumer:'BA',akk:'zaz\u016bzu',meaning:'to divide, distribute',cat:'action'},
+  {sign:'\u{12055}',sumer:'BAD',akk:'p\u00e2nu',meaning:'open, release, die',cat:'action'},
+  {sign:'\u{12080}',sumer:'BUR',akk:'puru',meaning:'bowl, container',cat:'object'},
+  {sign:'\u{1208A}',sumer:'DA',akk:'itu',meaning:'side, next to',cat:'abstract'},
+  {sign:'\u{120BE}',sumer:'DI',akk:'d\u012bnu',meaning:'judgment, verdict',cat:'abstract'},
+  {sign:'\u{120D3}',sumer:'DU',akk:'al\u0101ku',meaning:'to go, walk, come',cat:'action'},
+  {sign:'\u{120EF}',sumer:'E',akk:'b\u012btu',meaning:'house, temple',cat:'place'},
+  {sign:'\u{12100}',sumer:'EN',akk:'b\u0113lu',meaning:'lord, master',cat:'human'},
+  {sign:'\u{12115}',sumer:'GAB',akk:'gabbu',meaning:'all, totality',cat:'abstract'},
+  {sign:'\u{12119}',sumer:'GAL',akk:'rabbu',meaning:'great, big',cat:'abstract'},
+  {sign:'\u{12126}',sumer:'GI',akk:'qan\u00fb',meaning:'reed, return, repay',cat:'nature'},
+  {sign:'\u{12136}',sumer:'GIR3',akk:'b\u0113ru',meaning:'foot, road, league',cat:'object'},
+  {sign:'\u{12143}',sumer:'GU4',akk:'alpu',meaning:'bull, ox',cat:'nature'},
+  {sign:'\u{12155}',sumer:'HA',akk:'nunu',meaning:'fish',cat:'nature'},
+  {sign:'\u{1215E}',sumer:'HI',akk:'bala\u1e6du',meaning:'to mix, to live',cat:'action'},
+  {sign:'\u{12169}',sumer:'HUL',akk:'lemnu',meaning:'evil, bad, enemy',cat:'abstract'},
+  {sign:'\u{1218A}',sumer:'IM',akk:'t\u0101bu',meaning:'wind, clay tablet, storm',cat:'nature'},
+  {sign:'\u{121B3}',sumer:'ITUD',akk:'ar\u1e2bu',meaning:'month, moon',cat:'nature'},
+  {sign:'\u{121B8}',sumer:'KA',akk:'p\u00fb',meaning:'mouth, word, command',cat:'human'},
+  {sign:'\u{121CC}',sumer:'KI',akk:'er\u1e63etu',meaning:'earth, land, place (place det.)',cat:'place'},
+  {sign:'\u{121D2}',sumer:'KIN',akk:'--',meaning:'work, task, assignment',cat:'action'},
+  {sign:'\u{121EA}',sumer:'KUG',akk:'el\u1e6blu',meaning:'silver, pure, sacred',cat:'object'},
+  {sign:'\u{12202}',sumer:'LAL',akk:'n\u0101du',meaning:'to hang, carry, honey',cat:'action'},
+  {sign:'\u{1220A}',sumer:'LU2',akk:'aw\u012blum',meaning:'man, person (male det.)',cat:'human'},
+  {sign:'\u{12215}',sumer:'LUGAL',akk:'\u0161arru',meaning:'king, great man',cat:'human'},
+  {sign:'\u{12218}',sumer:'MA',akk:'m\u00e2tu',meaning:'land, boat',cat:'place'},
+  {sign:'\u{12226}',sumer:'MEN',akk:'ag\u00fb',meaning:'crown, tiara',cat:'object'},
+  {sign:'\u{1222C}',sumer:'MI',akk:'\u1e63al\u0101mu',meaning:'black, dark, night',cat:'abstract'},
+  {sign:'\u{12237}',sumer:'MU',akk:'\u0161umu',meaning:'name, year, to give',cat:'abstract'},
+  {sign:'\u{12248}',sumer:'NA',akk:'--',meaning:'stone, man (in names)',cat:'object'},
+  {sign:'\u{12253}',sumer:'NAM',akk:'s\u012bmtu',meaning:'fate, destiny, nature of',cat:'abstract'},
+  {sign:'\u{1226E}',sumer:'NE',akk:'i\u0161\u0101tu',meaning:'fire, burning',cat:'nature'},
+  {sign:'\u{12281}',sumer:'NI',akk:'--',meaning:'oil, fat',cat:'nature'},
+  {sign:'\u{1228B}',sumer:'NIN',akk:'b\u0113ltu',meaning:'queen, lady, mistress',cat:'human'},
+  {sign:'\u{1228F}',sumer:'NINDA',akk:'akalu',meaning:'bread, food',cat:'object'},
+  {sign:'\u{1229B}',sumer:'NU',akk:'l\u0101',meaning:'not, negation',cat:'abstract'},
+  {sign:'\u{122A6}',sumer:'PA',akk:'--',meaning:'branch, supervisor, wing',cat:'nature'},
+  {sign:'\u{122D1}',sumer:'SA',akk:'k\u012bdu',meaning:'sinew, equal, friend',cat:'abstract'},
+  {sign:'\u{122D8}',sumer:'SAG',akk:'r\u0113\u0161u',meaning:'head, top, first, chief (head det.)',cat:'human'},
+  {sign:'\u{122E0}',sumer:'SAL',akk:'sinni\u0161tu',meaning:'woman (female det.)',cat:'human'},
+  {sign:'\u{122EF}',sumer:'SE',akk:'he\u02bfu',meaning:'grain, barley',cat:'nature'},
+  {sign:'\u{122F6}',sumer:'SI',akk:'qar\u00e2nu',meaning:'horn, to be straight',cat:'nature'},
+  {sign:'\u{12300}',sumer:'SU',akk:'m\u0101sku',meaning:'flesh, hide, body',cat:'human'},
+  {sign:'\u{1230B}',sumer:'SUM',akk:'nad\u00e2nu',meaning:'to give',cat:'action'},
+  {sign:'\u{12315}',sumer:'SHA',akk:'libbu',meaning:'heart, interior, inside',cat:'abstract'},
+  {sign:'\u{1232A}',sumer:'TA',akk:'itti',meaning:'from, with, since',cat:'abstract'},
+  {sign:'\u{12337}',sumer:'TI',akk:'napi\u0161tu',meaning:'life, rib, arrow',cat:'abstract'},
+  {sign:'\u{12345}',sumer:'U',akk:'u',meaning:'and, ten, plant',cat:'number'},
+  {sign:'\u{1234C}',sumer:'UD',akk:'u\u0302mu',meaning:'sun, day, storm (Shamash)',cat:'nature'},
+  {sign:'\u{12367}',sumer:'UR',akk:'kalbu',meaning:'dog, city of Ur',cat:'place'},
+  {sign:'\u{1236B}',sumer:'URU',akk:'\u0101lu',meaning:'city (city determinative)',cat:'place'},
+  {sign:'\u{12380}',sumer:'UTU',akk:'\u0160ama\u0161',meaning:'sun god, justice, light',cat:'god'},
+  {sign:'\u{1238A}',sumer:'ZA',akk:'ab\u00e2ru',meaning:'stone, gem, bead',cat:'object'},
+  {sign:'\u{12392}',sumer:'ZI',akk:'napi\u0161tu',meaning:'spirit, life, breath',cat:'abstract'},
+];
+
+function buildCuneiTable(){
+  var tb=document.getElementById('cuneiBody');if(!tb)return;
+  CUNEI_SIGNS.forEach(function(c){
+    var tr=document.createElement('tr');
+    tr.innerHTML='<td class="cs-sign">'+c.sign+'</td>'
+      +'<td class="cs-sumer">'+c.sumer+'</td>'
+      +'<td class="cs-akk">'+c.akk+'</td>'
+      +'<td>'+c.meaning+'</td>'
+      +'<td><span class="cs-cat cat-'+c.cat+'">'+c.cat.toUpperCase()+'</span></td>';
+    tb.appendChild(tr);
+  });
+}
+
+// ===================== CUNEIFORM LANGUAGES =====================
+var CUNEI_LANGS=[
+  {name:'SUMERIAN',period:'c. 3200 \u2013 100 BCE',body:'Language isolate \u2014 unrelated to any known language. First written, last spoken c. 1800 BCE, then continued as a sacred scholarly language for 1,700 more years, like Latin in medieval Europe.'},
+  {name:'AKKADIAN',period:'c. 2400 \u2013 100 BCE',body:'East Semitic. Replaced Sumerian as spoken language after the Akkadian Empire. Two dialects: Assyrian (north) and Babylonian (south). The diplomatic language of the ancient Near East for 1,500 years.'},
+  {name:'EBLAITE',period:'c. 2400 \u2013 2300 BCE',body:'Northwest Semitic. Discovered 1974 at Ebla (Syria). 17,000+ tablets. Shows independent adaptation of cuneiform before strong Babylonian influence.'},
+  {name:'ELAMITE',period:'c. 3100 \u2013 400 BCE',body:'Language isolate, southeastern Iran. One of the three scripts on the Behistun Inscription \u2014 key to cuneiform decipherment.'},
+  {name:'HITTITE',period:'c. 1650 \u2013 1100 BCE',body:'Indo-European \u2014 the oldest recorded Indo-European language. Adopted cuneiform from Babylonia. Capital Hattusa (Turkey). Tablets discovered 1906.'},
+  {name:'HURRIAN',period:'c. 2300 \u2013 1200 BCE',body:'Language isolate. Used in the Mitanni kingdom. Mitanni Amarna letters (14th century BCE diplomatic correspondence with Egypt) written in Akkadian cuneiform.'},
+  {name:'UGARITIC',period:'c. 1400 \u2013 1200 BCE',body:'Northwest Semitic. An alphabet of only 30 cuneiform signs \u2014 earliest known alphabetic cuneiform. Destroyed with the Bronze Age Collapse c. 1200 BCE.'},
+  {name:'OLD PERSIAN',period:'c. 525 \u2013 330 BCE',body:'Indo-European. A simplified cuneiform alphabet of 36 signs invented by Darius I for royal inscriptions only. The Behistun Inscription is its most important example.'},
+];
+
+function buildCuneiLangs(){
+  var el=document.getElementById('cuneiLangs');if(!el)return;
+  CUNEI_LANGS.forEach(function(c){
+    var d=document.createElement('div');d.className='cl-card';
+    d.innerHTML='<div class="cl-name">'+c.name+'</div>'
+      +'<div class="cl-period">'+c.period+'</div>'
+      +'<div class="cl-body">'+c.body+'</div>';
+    el.appendChild(d);
+  });
+}
+
+// ===================== SCRIPT LINEAGE =====================
+function buildLineage(){
+  var el=document.getElementById('lineageTree');if(!el)return;
+  el.innerHTML=
+    '<div class="lt-section">'
+    +'<div class="lt-sec-title">ROOT 1 \u2014 CUNEIFORM FAMILY (c. 3200 BCE)</div>'
+    +'<div class="lt-row">'
+    +'<div class="lt-descendant"><div class="lt-d-name">SUMERIAN</div><div class="lt-d-date">c. 3200 BCE</div></div>'
+    +'<span class="lt-arrow">\u2192</span>'
+    +'<div class="lt-descendant"><div class="lt-d-name">AKKADIAN</div><div class="lt-d-date">c. 2400 BCE</div></div>'
+    +'<span class="lt-arrow">\u2192</span>'
+    +'<div class="lt-descendant"><div class="lt-d-name">BABYLONIAN / ASSYRIAN</div><div class="lt-d-date">c. 2000 BCE</div></div>'
+    +'<span class="lt-arrow">\u2192</span>'
+    +'<div class="lt-descendant"><div class="lt-d-name">UGARITIC ALPHABET</div><div class="lt-d-date">c. 1400 BCE</div></div>'
+    +'<span class="lt-arrow">\u2192</span>'
+    +'<div class="lt-descendant"><div class="lt-d-name">OLD PERSIAN</div><div class="lt-d-date">c. 525 BCE</div></div>'
+    +'</div></div>'
+    +'<div class="lt-section" style="margin-top:20px;">'
+    +'<div class="lt-sec-title">ROOT 2 \u2014 EGYPTIAN FAMILY (c. 3100 BCE) \u2192 ALL MODERN ALPHABETS</div>'
+    +'<div class="lt-row">'
+    +'<div class="lt-descendant"><div class="lt-d-name">HIEROGLYPHS</div><div class="lt-d-date">c. 3100 BCE</div></div>'
+    +'<span class="lt-arrow">\u2192</span>'
+    +'<div class="lt-descendant"><div class="lt-d-name">PROTO-SINAITIC</div><div class="lt-d-date">c. 1850 BCE</div></div>'
+    +'<span class="lt-arrow">\u2192</span>'
+    +'<div class="lt-descendant"><div class="lt-d-name">PHOENICIAN</div><div class="lt-d-date">c. 1100 BCE</div></div>'
+    +'</div>'
+    +'<div class="lt-row" style="margin-top:8px;padding-left:32px;">'
+    +'<span class="lt-arrow" style="margin-right:8px;">\u2198</span>'
+    +'<div class="lt-descendant"><div class="lt-d-name">GREEK</div><div class="lt-d-date">c. 800 BCE</div></div>'
+    +'<span class="lt-arrow">\u2192</span>'
+    +'<div class="lt-descendant"><div class="lt-d-name">LATIN</div><div class="lt-d-date">c. 700 BCE</div></div>'
+    +'<span class="lt-arrow">\u2192</span>'
+    +'<div class="lt-descendant"><div class="lt-d-name">ALL WESTERN SCRIPTS</div><div class="lt-d-date">in use today</div></div>'
+    +'</div>'
+    +'<div class="lt-row" style="margin-top:8px;padding-left:32px;">'
+    +'<span class="lt-arrow" style="margin-right:8px;">\u2198</span>'
+    +'<div class="lt-descendant"><div class="lt-d-name">ARAMAIC</div><div class="lt-d-date">c. 900 BCE</div></div>'
+    +'<span class="lt-arrow">\u2192</span>'
+    +'<div class="lt-descendant"><div class="lt-d-name">HEBREW / ARABIC</div><div class="lt-d-date">c. 200 BCE / 400 CE</div></div>'
+    +'<span class="lt-arrow">\u2192</span>'
+    +'<div class="lt-descendant"><div class="lt-d-name">2B+ SPEAKERS</div><div class="lt-d-date">today</div></div>'
+    +'</div></div>'
+    +'<div class="lt-section" style="margin-top:20px;">'
+    +'<div class="lt-sec-title">ROOT 3 \u2014 CHINESE CHARACTERS (c. 1250 BCE) \u2014 UNBROKEN TO PRESENT</div>'
+    +'<div class="lt-row">'
+    +'<div class="lt-descendant"><div class="lt-d-name">ORACLE BONE SCRIPT</div><div class="lt-d-date">c. 1250 BCE</div></div>'
+    +'<span class="lt-arrow">\u2192</span>'
+    +'<div class="lt-descendant"><div class="lt-d-name">BRONZE INSCRIPTION</div><div class="lt-d-date">c. 1000 BCE</div></div>'
+    +'<span class="lt-arrow">\u2192</span>'
+    +'<div class="lt-descendant"><div class="lt-d-name">SEAL SCRIPT</div><div class="lt-d-date">c. 221 BCE</div></div>'
+    +'<span class="lt-arrow">\u2192</span>'
+    +'<div class="lt-descendant"><div class="lt-d-name">SIMPLIFIED / TRAD.</div><div class="lt-d-date">in use today</div></div>'
+    +'<span class="lt-arrow">\u2192</span>'
+    +'<div class="lt-descendant"><div class="lt-d-name">KANJI / HANJA</div><div class="lt-d-date">Japan / Korea</div></div>'
+    +'</div></div>';
+}
+
+// ===================== INDEPENDENT SCRIPTS =====================
+var INDEP_SCRIPTS=[
+  // INDEPENDENT ORIGINS
+  {status:'deciphered',name:'SUMERIAN CUNEIFORM',date:'c. 3200 BCE \u2014 Uruk, Iraq',cat:'origin',body:'The world\'s first writing system, invented for grain accounting. Pictographic origin, abstracted into wedge-shaped signs within 500 years. Used for 3,000 years across 15 languages. Ancestor of all Mesopotamian scripts.'},
+  {status:'deciphered',name:'EGYPTIAN HIEROGLYPHS',date:'c. 3100 BCE \u2014 Egypt',cat:'origin',body:'Independent invention. 700+ signs combining logograms, phonograms, and determinatives. Used 3,500 years (3100 BCE \u2013 394 CE). Ancestor of Hieratic, Demotic, Coptic, and via Proto-Sinaitic, every alphabet used today.'},
+  {status:'undeciphered',name:'PROTO-ELAMITE',date:'c. 3100 \u2013 2900 BCE \u2014 Iran',cat:'origin',body:'The third earliest writing system \u2014 appearing almost simultaneously with Sumerian and Egyptian. ~1,000 signs on clay tablets across Iran. Almost certainly an independent invention. Still undeciphered; no bilingual text has been found.'},
+  {status:'undeciphered',name:'INDUS VALLEY SCRIPT',date:'c. 3300 \u2013 1900 BCE \u2014 Pakistan / NW India',cat:'origin',body:'~400 distinct signs. 4,000+ inscriptions, all short (average 5 signs). Possibly logo-syllabic. Not related to any known writing system. No bilingual key found. The longest undeciphered ancient script from a literate civilisation.'},
+  {status:'deciphered',name:'CHINESE ORACLE BONE SCRIPT',date:'c. 1250 BCE \u2014 Anyang, China',cat:'origin',body:'Invented for divination on turtle shells and cattle bones during the Shang Dynasty. The only ancient writing system with unbroken continuity to the present. Ancestor of modern Chinese, Japanese Kanji, and Korean Hanja.'},
+  {status:'partial',name:'MAYAN GLYPHS',date:'c. 300 BCE \u2013 1697 CE \u2014 Mexico / Guatemala',cat:'origin',body:'Fully developed logosyllabic system. ~800 glyphs, ~200 commonly used. Largely deciphered after 1952 (Yuri Knorozov). The only pre-Columbian script capable of fully representing spoken language. Final readings still being refined.'},
+  {status:'partial',name:'ZAPOTEC SCRIPT',date:'c. 500 BCE \u2014 Oaxaca, Mexico',cat:'origin',body:'Possibly the earliest writing in the Americas \u2014 predates Mayan. Found on stone monuments at Monte Alb\u00e1n. Calendar glyphs and names partially readable. Full system not yet understood. Likely ancestor or precursor to Mayan writing.'},
+  // ALPHABET FAMILY FROM EGYPTIAN
+  {status:'deciphered',name:'PROTO-SINAITIC',date:'c. 1850 BCE \u2014 Sinai Peninsula',cat:'alphabet',body:'The critical missing link between Egyptian hieroglyphs and every alphabet on Earth. Semitic workers in Sinai mines adapted Egyptian signs, naming each for a Semitic word beginning with that sound. 22-sign consonantal alphabet. Every letter you are reading now descends from this.'},
+  {status:'deciphered',name:'UGARITIC',date:'c. 1400 \u2013 1200 BCE \u2014 Ugarit, Syria',cat:'alphabet',body:'A cuneiform alphabet of only 30 wedge-shaped signs \u2014 the oldest known alphabetic cuneiform. Bridged the Mesopotamian and alphabetic traditions. Destroyed with the Bronze Age Collapse c. 1200 BCE. Key source for early Canaanite mythology (Baal Cycle).'},
+  {status:'deciphered',name:'PHOENICIAN ALPHABET',date:'c. 1050 BCE \u2014 Lebanon / Canaan',cat:'alphabet',body:'22 consonants, no vowels, written right-to-left. Spread by maritime traders across the Mediterranean. Ancestor of Greek, Latin, Arabic, Hebrew, Syriac, and virtually every modern script. The most influential writing system ever created \u2014 now used by 6+ billion people in derived forms.'},
+  {status:'deciphered',name:'ARAMAIC',date:'c. 900 BCE \u2014 Syria / Mesopotamia',cat:'alphabet',body:'Derived from Phoenician. Lingua franca of the Persian Empire and Near East for 1,000 years. The language Jesus spoke. Ancestor of Hebrew square script, Arabic, Nabataean, Syriac, Sogdian, and \u2014 via Sogdian \u2014 the Mongolian and Uyghur scripts. One of history\'s most consequential languages.'},
+  {status:'deciphered',name:'HEBREW SCRIPT',date:'c. 200 BCE \u2014 Judea',cat:'alphabet',body:'Square Hebrew adopted from Aramaic during the Babylonian exile. An abjad \u2014 consonants only; vowels added as diacritics (nikud) c. 600\u2013900 CE by the Masoretes. The Dead Sea Scrolls (c. 150 BCE \u2013 70 CE) are its oldest major corpus. Used continuously for 2,500 years.'},
+  {status:'deciphered',name:'GREEK ALPHABET',date:'c. 800 BCE \u2014 Greece',cat:'alphabet',body:'Derived from Phoenician but added vowel letters (alpha, epsilon, iota, omicron, upsilon) \u2014 the first true alphabet representing both consonants and vowels. Two branches: Western (ancestor of Latin) and Eastern (ancestor of Cyrillic). The foundation of Western literacy and science.'},
+  {status:'deciphered',name:'LATIN ALPHABET',date:'c. 700 BCE \u2014 Rome / Etruria',cat:'alphabet',body:'Derived from Etruscan via Western Greek. 23 letters originally; expanded to 26. Carried by the Roman Empire across Europe. Ancestor of French, Spanish, Italian, Portuguese, Romanian, English, and 100+ other languages. Now the most widely used writing system: ~6 billion users.'},
+  {status:'deciphered',name:'ARABIC SCRIPT',date:'c. 400 CE \u2014 Arabian Peninsula',cat:'alphabet',body:'Derived from Nabataean via Aramaic. 28 letters, right-to-left. Became the script of the Quran (c. 610 CE) and spread with Islam across Africa, the Middle East, Central Asia, and Southeast Asia. Used to write Arabic (~400M native speakers), Persian, Urdu, Pashto, and others.'},
+  {status:'deciphered',name:'CYRILLIC',date:'c. 940 CE \u2014 Bulgaria',cat:'alphabet',body:'Created by disciples of Saints Cyril and Methodius to write Old Church Slavonic. Based on Greek uncial with added signs for Slavic sounds. Used for Russian, Ukrainian, Bulgarian, Serbian, Mongolian, Kazakh, and ~50 other languages. ~250 million daily users.'},
+  // SOUTH & EAST ASIAN
+  {status:'deciphered',name:'BRAHMI',date:'c. 300 BCE \u2014 India',cat:'asian',body:'The ancestor of all South and Southeast Asian scripts. An abugida \u2014 consonant-vowel units. Possibly derived from a Semitic abjad, possibly independent. Ancestor of Devanagari (Hindi, Sanskrit), Bengali, Tamil, Thai, Khmer, Tibetan, Sinhala, Burmese, Javanese \u2014 ~40+ scripts covering 2+ billion people.'},
+  {status:'deciphered',name:'DEVANAGARI',date:'c. 1200 CE \u2014 North India',cat:'asian',body:'Descended from Brahmi via Siddham. An abugida: each consonant carries an inherent vowel, modified by diacritics. Writes Hindi (600M+ speakers), Sanskrit, Nepali, Marathi, Maithili, and others. One of the most phonetically precise scripts ever designed: one sign, one sound.'},
+  {status:'deciphered',name:'HANGUL',date:'1443 CE \u2014 Korea',cat:'asian',body:'Invented by King Sejong the Great. Unique: a featural alphabet where each letter\'s shape reflects the tongue and mouth position when producing the sound. Designed to replace Chinese characters and increase literacy. Regarded by linguists as one of the most rationally designed writing systems ever created.'},
+  // UNDECIPHERED
+  {status:'partial',name:'LINEAR B',date:'c. 1450 \u2013 1200 BCE \u2014 Crete / Greece',cat:'mystery',body:'Deciphered in 1952 by architect Michael Ventris \u2014 revealed as an early form of Greek, 600 years older than Homer. Used exclusively for palace administration. Disappeared with the Bronze Age Collapse. Its decipherment proved Greek literacy predated classical Greece by six centuries.'},
+  {status:'undeciphered',name:'LINEAR A (MINOAN)',date:'c. 1800 \u2013 1450 BCE \u2014 Crete',cat:'mystery',body:'~300 signs, ~1,500 inscriptions. Used by the Minoan civilisation \u2014 Europe\'s first literate culture. The underlying language is unknown and unrelated to any known tongue. One of the great unsolved mysteries of linguistics. Linear B was derived from it but reads a completely different language.'},
+  {status:'undeciphered',name:'PROTO-SINAITIC (PARTIAL)',date:'c. 1900 \u2013 1500 BCE \u2014 Sinai / Canaan',cat:'mystery',body:'While Proto-Sinaitic is the ancestor of all alphabets, ~40 inscriptions remain individually unread. The values of several signs are disputed. The precise transition from Proto-Sinaitic to Phoenician \u2014 the moment every alphabet was born \u2014 is still not fully documented in the archaeological record.'},
+  {status:'undeciphered',name:'RONGORONGO',date:'c. 1200 CE \u2014 Easter Island (Rapa Nui)',cat:'mystery',body:'25 surviving wooden tablets. ~120 glyphs in alternating reversed lines (boustrophedon). Possibly the only independent writing invention in Polynesia \u2014 or stimulated by Spanish documents seen in 1770. The language (Rapa Nui) is known; the script is not. Completely undeciphered.'},
+  {status:'undeciphered',name:'PROTO-ELAMITE',date:'c. 3100 \u2013 2900 BCE \u2014 Iran',cat:'mystery',body:'~1,000 signs on clay tablets spread across Iran. The third oldest writing system. Possibly descended from earlier Elamite accounting tokens. Despite being the third writing system invented, it has never been deciphered. No bilingual inscription. No language identification. A complete mystery.'},
+];
+
+function buildIndepScripts(){
+  var el=document.getElementById('indepScripts');if(!el)return;
+  var groups=[
+    {key:'origin',  label:'INDEPENDENT ORIGINS — INVENTED WITHOUT A MODEL'},
+    {key:'alphabet',label:'THE ALPHABET FAMILY — ALL DESCENDED FROM PROTO-SINAITIC (FROM EGYPTIAN)'},
+    {key:'asian',   label:'SOUTH & EAST ASIAN TRADITIONS'},
+    {key:'mystery', label:'UNDECIPHERED & PARTIALLY KNOWN — STILL WITHOLDING THEIR KNOWLEDGE'},
+  ];
+  groups.forEach(function(g){
+    var hdr=document.createElement('div');
+    hdr.style.cssText='grid-column:1/-1;font-family:var(--glyph);font-size:8px;letter-spacing:5px;color:var(--amber);border-bottom:1px solid rgba(201,149,42,.2);padding-bottom:10px;margin-top:32px;margin-bottom:8px;';
+    hdr.textContent=g.label;el.appendChild(hdr);
+    INDEP_SCRIPTS.filter(function(s){return s.cat===g.key;}).forEach(function(s){
+      var d=document.createElement('div');d.className='is-card';
+      var lbl=s.status==='deciphered'?'DECIPHERED':s.status==='undeciphered'?'UNDECIPHERED':'PARTIALLY DECIPHERED';
+      d.innerHTML='<div class="is-status is-'+s.status+'">'+lbl+'</div>'
+        +'<div class="is-name">'+s.name+'</div>'
+        +'<div class="is-date">'+s.date+'</div>'
+        +'<div class="is-body">'+s.body+'</div>';
+      el.appendChild(d);
+    });
+  });
+}
+
+</script>
+</body>
+</html>
